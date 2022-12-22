@@ -50,4 +50,95 @@ body {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.button-typethree, .button-typetwo, .button-typeone, .button-submit {
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn-wrap {
+  margin-top: 50px;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.button-submit {
+  width: 121px;
+  background-color: #f8d24e;
+}
+
+.button-typeone {
+  width: 154px;
+  height: 40px;
+  background-color: inherit;
+  text-decoration: underline;
+  color: #f8d24e;
+}
+
+.button-typetwo {
+  background-color: inherit;
+  border: 2px solid #f8d24e;
+}
+
+.button-typethree {
+  background-color: #f8d24e;
+}
+
+.active-typeone {
+  transition: color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.active-typeone:hover {
+  color: #0a8817;
+}
+.active-typeone:focus {
+  color: #fcfcfc;
+}
+
+.active-typetwo {
+  transition: border-color 1000ms cubic-bezier(0.4, 0, 0.2, 1), color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.active-typetwo:hover {
+  border: 2px solid #0a8817;
+}
+.active-typetwo:focus {
+  border: 2px solid #0a8817;
+  color: #fcfcfc;
+}
+
+.active-typethree {
+  transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1), color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.active-typethree:hover {
+  background-color: #0a8817;
+}
+.active-typethree:focus {
+  background-color: #0a8817;
+  color: #fcfcfc;
+}
+
+.size-readmore {
+  width: 164px;
+}
+
+.size-location {
+  width: 196px;
+}
+
+.size-buynow {
+  width: 152px;
+}
+
+.size-products {
+  width: 134px;
+}
+
+.size-franchise {
+  width: 196px;
 }/*# sourceMappingURL=index.css.map */

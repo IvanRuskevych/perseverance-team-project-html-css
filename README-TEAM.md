@@ -3,7 +3,7 @@
 1. клоннуємо репозиторій github:
 2. відкрили у VScode
 3. terminal: npm install - лише 1 раз, в подальшому не потрібно
-4. terminal: git start
+4. terminal: npm start
 5. terminal №2: git status
 6. terminal №2: git branch (name-your-branch)
 7. terminal №2: git checkout (name-your-branch)
