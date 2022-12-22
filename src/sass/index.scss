@@ -3,11 +3,13 @@
 @import './base/variables';
 
 @import './base/common';
-@import './base/container';
 
 // utils styles
 @import './utils/mixins.scss';
-@import './utils/placeholders'; // layout styles
+@import './utils/placeholders';
+@import './base/container';
+
+// layout styles
 
 // @import './layout/hero';
 // @import './layout/header';
