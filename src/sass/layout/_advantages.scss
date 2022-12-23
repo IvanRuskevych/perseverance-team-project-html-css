@@ -1,0 +1,142 @@
+.advan {
+  padding-top: 61px;
+  padding-bottom: 64px;
+  &__slogan {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    text-align: center;
+    text-transform: uppercase;
+    color: #fcfcfc;
+    margin-bottom: 12px;
+  }
+  &__question {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fcfcfc;
+    margin-bottom: 32px;
+  }
+  &__img {
+    width: 280px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__description {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 176%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #fcfcfc;
+    &-one {
+      margin-bottom: 4px;
+    }
+    &-two {
+      margin-bottom: 10px;
+    }
+    &-three {
+      display: none;
+    }
+  }
+  &__button {
+    position: relative;
+    width: 164px;
+    height: 42px;
+    padding: 12px 34px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    color: #000000;
+    background: #f8d24e;
+    border-radius: 10px;
+    border-color: transparent;
+    cursor: pointer;
+  &::after{
+    content: " ";
+    position: absolute;
+    bottom: 12px;
+    right: 25px;
+    width: 12px;
+    height: 12px;
+    margin-left: 12px;
+    background-image: url(../images/arrow.png);
+    
+  }
+  }
+  &__list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__item {
+    text-align: center;
+    &:not(:last-child) {
+      margin-bottom: 100px;
+    }
+  }
+  &__quality {
+    position: relative;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(44 / 36);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fcfcfc;
+    &--first::before {
+      content: " ";
+      position: absolute;
+      top: -60px;
+      left: 50%;
+      width: 50px;
+      height: 50px;
+      margin-bottom: 16px;
+      transform: translateX(-50%); 
+      background-image: url(../images/cow.png);
+    }
+        &--second::before {
+          content: " ";
+          position: absolute;
+          top: -60px;
+          left: 50%;
+          width: 50px;
+          height: 50px;
+          margin-bottom: 16px;
+          transform: translateX(-50%);
+          background-image: url(../images/weight.png);
+        }
+                &--third::before {
+                  content: " ";
+                  position: absolute;
+                  top: -60px;
+                  left: 50%;
+                  width: 50px;
+                  height: 50px;
+                  margin-bottom: 16px;
+                  transform: translateX(-50%);
+                  background-image: url(../images/ice_cream.png);
+                }
+  }
+  &__quality-description {
+    margin-left: auto;
+    margin-right: auto;
+    width: 230px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+    color: #fcfcfc;
+  }
+}
