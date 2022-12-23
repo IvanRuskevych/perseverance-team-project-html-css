@@ -33,6 +33,7 @@
     width: 280px;
   }
   @include mq(tab) {
+    padding: 100px;
     width: 568px;
     height: 644px;
   }
@@ -43,10 +44,19 @@
     border: none;
     background-color: inherit;
   }
+  &__icon {
+    @include mq(tab) {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
 
 .button__buy-now {
   margin-top: 26px;
+  @include mq(tab) {
+    margin-top: 32px;
+  }
 }
 
 .modal-form {
@@ -81,6 +91,10 @@
     /* or 17px */
 
     color: #131313;
+
+    @include mq(tab) {
+      height: 42px;
+    }
   }
 
   &__label:not(:last-child) {
@@ -108,5 +122,9 @@
     /* or 17px */
 
     color: #131313;
+
+    @include mq(tab) {
+      height: 84px;
+    }
   }
 }

@@ -207,6 +207,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .modal {
+    padding: 100px;
     width: 568px;
     height: 644px;
   }
@@ -218,9 +219,20 @@ body {
   border: none;
   background-color: inherit;
 }
+@media screen and (min-width: 768px) {
+  .modal__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
 
 .button__buy-now {
   margin-top: 26px;
+}
+@media screen and (min-width: 768px) {
+  .button__buy-now {
+    margin-top: 32px;
+  }
 }
 
 .modal-form__title {
@@ -249,6 +261,11 @@ body {
   /* or 17px */
   color: #131313;
 }
+@media screen and (min-width: 768px) {
+  .modal-form__input {
+    height: 42px;
+  }
+}
 .modal-form__label:not(:last-child) {
   display: block;
   margin-bottom: 12px;
@@ -269,4 +286,9 @@ body {
   line-height: 140%;
   /* or 17px */
   color: #131313;
+}
+@media screen and (min-width: 768px) {
+  .modal-form__comments {
+    height: 84px;
+  }
 }/*# sourceMappingURL=index.css.map */
