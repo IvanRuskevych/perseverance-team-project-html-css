@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import '~node_modules/modern-normalize/modern-normalize.css';
 h1,
 h2,
@@ -173,21 +174,35 @@ body {
   width: 196px;
 }
 
-.backdrop {
+/* Стили для подложки */
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
 }
 
-.backdrop.is-hidden {
-  visibility: hidden;
+/* Стили для модальных окон */
+.modal {
+  /* Скрываем окна  */
   opacity: 0;
-  pointer-events: none;
+  visibility: hidden;
 }
 
+/* Стили для активных классов подложки и окна */
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Стили для modal окна */
 .modal {
   position: absolute;
   top: 50%;
@@ -226,6 +241,7 @@ body {
   }
 }
 
+/* Додаткові стилі button-submit-buy  */
 .button__buy-now {
   margin-top: 26px;
 }
@@ -235,126 +251,7 @@ body {
   }
 }
 
-.modal-form__title {
-  text-align: center;
-  margin-top: 28px;
-  margin-bottom: 20px;
-  font-family: "Seymour One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-}
-.modal-form__input {
-  padding-left: 12px;
-  width: 100%;
-  height: 32px;
-  outline: 0;
-  background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
-  border-radius: 10px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 140%;
-  /* or 17px */
-  color: #131313;
-}
-@media screen and (min-width: 768px) {
-  .modal-form__input {
-    height: 42px;
-  }
-}
-.modal-form__label:not(:last-child) {
-  display: block;
-  margin-bottom: 12px;
-}
-.modal-form__comments {
-  padding: 8px 12px;
-  height: 65px;
-  resize: none;
-  outline: 0;
-  width: 100%;
-  background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
-  border-radius: 10px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 140%;
-  /* or 17px */
-  color: #131313;
-}
-@media screen and (min-width: 768px) {
-  .modal-form__comments {
-    height: 84px;
-  }
-}
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.backdrop.is-hidden-buy {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.modal-buy {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 15px;
-  width: 95%;
-  background-color: #fcfcfc;
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
-}
-@media screen and (min-width: 280px) and (max-width: 1199.98px) {
-  .modal-buy {
-    padding: 28px;
-    width: 280px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .modal-buy {
-    padding: 100px;
-    width: 568px;
-    height: 644px;
-  }
-}
-.modal-buy__button {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  border: none;
-  background-color: inherit;
-}
-@media screen and (min-width: 768px) {
-  .modal-buy__icon {
-    width: 20px;
-    height: 20px;
-  }
-}
-
-.button__buy-now {
-  margin-top: 26px;
-}
-@media screen and (min-width: 768px) {
-  .button__buy-now {
-    margin-top: 32px;
-  }
-}
-
+/* Стили для forms */
 .modal-form__title {
   text-align: center;
   margin-top: 28px;
