@@ -252,9 +252,13 @@ body {
 }
 
 /* Стили для forms */
+@media screen and (min-width: 768px) {
+  .modal-form {
+    width: 368px;
+  }
+}
 .modal-form__title {
   text-align: center;
-  margin-top: 28px;
   margin-bottom: 20px;
   font-family: "Seymour One";
   font-style: normal;
@@ -308,4 +312,15 @@ body {
   .modal-form__comments {
     height: 84px;
   }
+}
+
+.franchise-text {
+  margin-bottom: 24px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  /* or 20px */
+  color: #131313;
 }/*# sourceMappingURL=index.css.map */
