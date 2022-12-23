@@ -36,6 +36,7 @@
 }
 
 @mixin mq($type) {
+  $mobile_sm: 280px;
   $mobile: 480px;
   $tablet: 768px;
   $desktop: 1200px;
@@ -84,6 +85,11 @@
 
   @if $type == 'mob-tab' {
     @media screen and (min-width: $mobile) and (max-width: ($desktop - 0.02)) {
+      @content;
+    }
+  }
+  @if $type == 'mob_sm-tab' {
+    @media screen and (min-width: $mobile-sm) and (max-width: ($desktop - 0.02)) {
       @content;
     }
   }

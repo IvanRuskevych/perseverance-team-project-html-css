@@ -1,1 +1,47 @@
 <!-- list of modals -->
+<!-- modal windows for button "Buy now" -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__button" type="button" data-modal-close>
+      <svg class="modal__icon" width="11" height="11">
+        <use href="images/sprite-modals.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <form class="modal-form">
+      <h2 class="modal-form__title">Buy now</h2>
+      <label class="modal-form__label">
+        <input
+          class="modal-form__input"
+          type="text"
+          name="user-name"
+          placeholder="Name"
+        />
+      </label>
+
+      <label class="modal-form__label">
+        <input
+          class="modal-form__input"
+          type="tel"
+          name="tel"
+          placeholder="Phone"
+        />
+      </label>
+
+      <textarea
+        class="modal-form__comments"
+        name="comments"
+        cols="30"
+        rows="10"
+        placeholder="Comment"
+      ></textarea>
+
+      <button
+        class="button-submit active-typethree button__buy-now"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
