@@ -95,15 +95,14 @@
     }
 
     &__rights {
-        padding-top: 20px;
+        padding: 20px;
         margin-top: 40px;
-        border-top: 1px solid #E1E1E1;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.52;
         text-align: center;
         color: #7A7A7A;
-        width: 100vw;
+        border-top: 1px solid #E1E1E1;
 
         &-descr {
             width: 150px;
@@ -115,7 +114,8 @@
         }
 
         @include mq(desk) {
-            width: 100%;
+            width: 1200px;
+            padding: 12px 17px;
         }
 
 

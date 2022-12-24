@@ -1,12 +1,13 @@
 // base styles
 @import './base/reset';
 @import './base/variables';
+@import './utils/mixins.scss';
 
 @import './base/common';
 @import './base/container';
 
 // utils styles
-@import './utils/mixins.scss';
+
 @import './utils/placeholders'; // layout styles
 
 // @import './layout/hero';
