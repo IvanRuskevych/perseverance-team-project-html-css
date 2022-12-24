@@ -1,3 +1,27 @@
 <header class="container">
-  <h1>header</h1>
-</header>
+      <div class="header__wrapper">
+          <svg class="header__logo" width="60" height="65">
+              <use href="./images/sprite.svg#icon-Logo"></use>
+          </svg>
+          <button class="header__menu-button" type="button" aria-expanded="false" data-menu-button>
+            <svg class="header__menu-icon" width="24" height="20" aria-label="Переключатель мобильного меню">
+              <use class="icon-open" href="./images/sprite.svg#icon-open"></use>
+              <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
+            </svg>
+           </button>
+          
+          <nav class="header__menu" data-menu>
+              <ul class="header__list">
+                  <li class="header__item"><a class="header__link" href="">Home</a></li>
+                  <li class="header__item"><a class="header__link" href="">How it’s made?</a></li>
+                  <li class="header__item"><a class="header__link" href="">Our products</a></li>
+                  <li class="header__item"><a class="header__link" href="">Contact</a></li>
+              </ul>
+              <button class="header__button-order" type="button" data-menu>
+                Buy now
+                <span class="button-order__icon"></span>
+              </button>
+          </nav>
+      </div>  
+    </header>
+
