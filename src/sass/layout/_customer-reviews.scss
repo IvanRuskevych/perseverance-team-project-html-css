@@ -1,6 +1,37 @@
 .slide {
-    background-image: url(../images/customer-reviews/frame/frame-mobile-1x.png);
+    background-image: url(../images/customer-reviews/frame/frame-mobile-1x.jpg);
 
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/customer-reviews/frame/frame-mobile-2x.jpg);
+    }
+
+    height: 1037px;
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/customer-reviews/frame/frame-tablet-1x.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/customer-reviews/frame/frame-tablet-2x.png);
+        }
+
+        height: 1017px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url(../images/customer-reviews/frame/frame-desktop-1x.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/customer-reviews/frame/frame-desktop-2x.jpg);
+        }
+
+        height: 1053px;
+    }
 
 }
 
@@ -10,7 +41,13 @@
     @media screen and (min-width: 768px) {
         margin-bottom: 100px;
     }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 140px;
+    }
 }
+
+
 
 .slide__client {
     margin-left: auto;
@@ -36,11 +73,10 @@
 
     @media screen and (min-width: 768px) {
         padding: 35px 80px;
-    }
-
-    @media screen and (max-width: 1199px) {
         height: 138px;
     }
+
+
 }
 
 .slide__text {
@@ -66,6 +102,11 @@
         text-align: center;
         letter-spacing: 0.04em;
     }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+
+    }
 }
 
 .location {
@@ -90,6 +131,7 @@
 
         text-align: center;
     }
+
 }
 
 visually-hidden {
@@ -110,19 +152,41 @@ visually-hidden {
 }
 
 .slideshow-box {
-    // position: absolute;
+    // width: 280px;
+    // height: 676px;
 
+    @media screen and (min-width: 768px) {
+        // width: 705px;
+        // height: 782px;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        // width: 1013px;
+        // height: 923px;
+    }
 }
 
 .slideshow-container {
     position: relative;
     top: -32px;
-    // right: 0;
-    padding-bottom: 401px;
+
+    height: 676px;
     margin: auto;
 
     @media screen and (min-width: 768px) {
         top: -144px;
+        width: 705px;
+        height: 782px;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        top: -98px;
+        width: 1013px;
+        height: 923px;
+
+        // padding-bottom: 228px;
     }
 }
 
