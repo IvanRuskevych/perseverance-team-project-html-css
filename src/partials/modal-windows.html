@@ -6,7 +6,7 @@
     </svg>
   </button>
 
-  <h2 class="modal-form__title">Buy now</h2>
+  <h2 class="modal__title">Buy now</h2>
 
   <ul class="modal-list">
     <li class="modal-item modal-item__icecream">
@@ -63,14 +63,70 @@
 </div>
 
 <!-- modal form for Chololate icecream -->
-<div class="modal" data-modal="2">
+<div class="modal modal--icecream-paddings" data-modal="2">
   <button class="modal__button js-modal-close" type="button" data-modal="2">
     <svg class="modal__icon" width="11" height="11">
       <use href="images/sprite-modals.svg#icon-close"></use>
     </svg>
   </button>
+
+  <h2 class="modal__title">Chololate icecream</h2>
+  <div class="modal__icecream-image"></div>
+  <ul class="modal-icechololate__list">
+    <li class="modal-icechololate__item">
+      <p class="modal-icechololate__text">kcal</p>
+      <div class="modal-icechololate__circle">
+        <p class="modal-icechololate__circle-text">320</p>
+      </div>
+    </li>
+    <li class="modal-icechololate__item">
+      <p class="modal-icechololate__text">Prote...</p>
+      <div class="modal-icechololate__circle">
+        <p class="modal-icechololate__circle-text">4g</p>
+      </div>
+    </li>
+    <li class="modal-icechololate__item">
+      <p class="modal-icechololate__text">Fats</p>
+      <div class="modal-icechololate__circle">
+        <p class="modal-icechololate__circle-text">8,2g</p>
+      </div>
+    </li>
+    <li class="modal-icechololate__item">
+      <p class="modal-icechololate__text">Carbs</p>
+      <div class="modal-icechololate__circle">
+        <p class="modal-icechololate__circle-text">40,4g</p>
+      </div>
+    </li>
+  </ul>
+  <h3 class="modal__posttitle">Ingredients</h3>
+  <ul class="ingredients-list ingredients-first list">
+    <li class="ingredients-list__item">
+      <p class="ingredients-list__text text-left">Milk</p>
+      <p class="ingredients-list__text text-right">100ml</p>
+    </li>
+    <li class="ingredients-list__item">
+      <p class="ingredients-list__text text-left">Belgian chocolate</p>
+      <p class="ingredients-list__text text-right">20g</p>
+    </li>
+    <li class="ingredients-list__item">
+      <p class="ingredients-list__text text-left">Cream</p>
+      <p class="ingredients-list__text text-right">150 ml</p>
+    </li>
+    <li class="ingredients-list__item">
+      <p class="ingredients-list__text text-left">Cocoa powder</p>
+      <p class="ingredients-list__text text-right">30g</p>
+    </li>
+    <li class="ingredients-list__item">
+      <p class="ingredients-list__text text-left">Sugar</p>
+      <p class="ingredients-list__text text-right">40g</p>
+    </li>
+    <li class="ingredients-list__item">
+      <p class="ingredients-list__text text-left">Vanilla sugar</p>
+      <p class="ingredients-list__text text-right">10g</p>
+    </li>
+  </ul>
+
   <form class="modal-form">
-    <h2 class="modal-form__title">Chololate icecream</h2>
     <label class="modal-form__label">
       <input
         class="modal-form__input"
@@ -119,10 +175,10 @@
       <use href="images/sprite-modals.svg#icon-close"></use>
     </svg>
   </button>
+  <h2 class="modal__title franchise-title">
+    Thank you for your interest in owning an Ice Cream shop
+  </h2>
   <form class="modal-form">
-    <h2 class="modal-form__title">
-      Thank you for your interest in owning an Ice Cream shop
-    </h2>
     <p class="franchise-text">
       Due to the overwhelming volume of franchise requests we are not accepting
       new franchisee applications at this time. Once the application process
@@ -173,7 +229,7 @@
     ></textarea>
 
     <button
-      class="button-submit active-typethree button__buy-now"
+      class="button-submit active-typethree button__franchise"
       type="submit"
     >
       Submit

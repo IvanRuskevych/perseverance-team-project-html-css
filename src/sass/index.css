@@ -188,13 +188,6 @@ body {
   z-index: 20;
 }
 
-/* Стили для модальных окон */
-.modal {
-  /* Скрываем окна  */
-  opacity: 0;
-  visibility: hidden;
-}
-
 /* Стили для активных классов подложки и окна */
 .modal.active,
 .overlay.active {
@@ -213,6 +206,9 @@ body {
   background-color: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
 }
 @media screen and (min-width: 280px) and (max-width: 1199.98px) {
   .modal {
@@ -222,9 +218,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .modal {
-    padding: 100px;
     width: 568px;
-    height: 644px;
   }
 }
 .modal__button {
@@ -240,13 +234,139 @@ body {
     height: 20px;
   }
 }
+.modal__title {
+  text-align: center;
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.modal__icecream-image {
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 132px;
+  height: 136px;
+}
+.modal__icecream-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 132px;
+  height: 132px;
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  background-image: url(../images/img-modals/icecreamchokol-280.jpg);
+}
+.modal__posttitle {
+  margin-bottom: 24px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+  text-align: center;
+  color: #131313;
+}
+.modal--icecream-paddings {
+  padding: 28px 20px;
+}
 
-/* Додаткові стилі button-submit-buy  */
+.modal-icechololate__list {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-icechololate__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 53px;
+  height: 72px;
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+}
+.modal-icechololate__text {
+  padding-bottom: 8px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #131313;
+}
+.modal-icechololate__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -2px;
+  width: 43px;
+  height: 43px;
+  background: #9cbe8f;
+  border: 2px solid #9cbe8f;
+  border-radius: 50%;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+}
+.modal-icechololate__circle-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 28px;
+  /* or 280% */
+  color: #131313;
+}
+
+.ingredients-list {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .ingredients-list {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 48px;
+  }
+}
+.ingredients-list__item {
+  display: flex;
+  justify-content: space-between;
+}
+.ingredients-list__item:not(:last-child) {
+  margin-bottom: 11px;
+}
+.ingredients-list__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176%;
+  /* identical to box height, or 25px */
+  letter-spacing: 0.04em;
+  color: #131313;
+}
+
+/* Додаткові стилі button in modals  */
 .button__buy-now {
   margin-top: 26px;
 }
 @media screen and (min-width: 768px) {
   .button__buy-now {
+    margin-top: 32px;
+  }
+}
+.button__franchise {
+  margin-top: 24px;
+}
+@media screen and (min-width: 768px) {
+  .button__franchise {
     margin-top: 32px;
   }
 }
@@ -257,16 +377,10 @@ body {
 }
 @media screen and (min-width: 768px) {
   .modal-form {
+    margin-left: auto;
+    margin-right: auto;
     width: 368px;
   }
-}
-.modal-form__title {
-  text-align: center;
-  font-family: "Seymour One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
 }
 .modal-form__box {
   display: flex;
@@ -342,6 +456,11 @@ body {
   display: block;
   margin-bottom: 12px;
 }
+@media screen and (min-width: 768px) {
+  .modal-form__label:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
 .modal-form__comments {
   padding: 8px 12px;
   height: 65px;
@@ -370,6 +489,12 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .modal-list {
+    margin-bottom: 40px;
+    gap: 32px;
+  }
 }
 
 .modal-item {
@@ -461,4 +586,13 @@ body {
   line-height: 140%;
   /* or 20px */
   color: #131313;
+}
+@media screen and (min-width: 768px) {
+  .franchise-text {
+    margin-bottom: 32px;
+  }
+}
+
+.franchise-title {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=index.css.map */

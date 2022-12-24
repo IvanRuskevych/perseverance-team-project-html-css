@@ -14,14 +14,6 @@
   z-index: 20;
 }
 
-/* Стили для модальных окон */
-
-.modal {
-  /* Скрываем окна  */
-  opacity: 0;
-  visibility: hidden;
-}
-
 /* Стили для активных классов подложки и окна */
 
 .modal.active,
@@ -49,10 +41,10 @@
     padding: 28px;
     width: 280px;
   }
+
   @include mq(tab) {
-    padding: 100px;
     width: 568px;
-    height: 644px;
+    // height: 644px;
   }
   &__button {
     position: absolute;
@@ -67,22 +59,6 @@
       height: 20px;
     }
   }
-}
-
-/* Додаткові стилі button-submit-buy  */
-.button__buy-now {
-  margin-top: 26px;
-  @include mq(tab) {
-    margin-top: 32px;
-  }
-}
-
-/* Стили для forms */
-.modal-form {
-  margin-bottom: 20px;
-  @include mq(tab) {
-    width: 368px;
-  }
 
   &__title {
     text-align: center;
@@ -93,6 +69,165 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+  }
+  &__icecream-image {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 132px;
+    height: 136px;
+  }
+  &__icecream-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    width: 132px;
+    height: 132px;
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    background-image: url(../images/img-modals/icecreamchokol-280.jpg);
+  }
+
+  &__posttitle {
+    margin-bottom: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+
+    text-align: center;
+
+    color: #131313;
+  }
+
+  &--icecream-paddings {
+    padding: 28px 20px;
+  }
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-icechololate {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    width: 53px;
+    height: 72px;
+    border: 2px solid #9cbe8f;
+    border-radius: 40px;
+  }
+  &__text {
+    padding-bottom: 8px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    // display: flex;
+    // align-items: center;
+    // text-align: center;
+
+    color: #131313;
+  }
+  &__circle {
+    @include flexCenter();
+    position: absolute;
+    top: -2px;
+
+    width: 43px;
+    height: 43px;
+    background: #9cbe8f;
+    border: 2px solid #9cbe8f;
+    border-radius: 50%;
+    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+    &-text {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 28px;
+      /* or 280% */
+
+      color: #131313;
+    }
+  }
+}
+
+.ingredients-list {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 40px;
+
+  @include mq(tab) {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 48px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 11px;
+  }
+  &__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    /* identical to box height, or 25px */
+
+    letter-spacing: 0.04em;
+
+    color: #131313;
+  }
+}
+
+/* Додаткові стилі button in modals  */
+.button {
+  &__buy-now {
+    margin-top: 26px;
+    @include mq(tab) {
+      margin-top: 32px;
+    }
+  }
+  &__franchise {
+    margin-top: 24px;
+    @include mq(tab) {
+      margin-top: 32px;
+    }
+  }
+}
+
+/* Стили для forms */
+.modal-form {
+  margin-bottom: 20px;
+  @include mq(tab) {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 368px;
   }
 
   &__box {
@@ -189,6 +324,9 @@
   &__label:not(:last-child) {
     display: block;
     margin-bottom: 12px;
+    @include mq(tab) {
+      margin-bottom: 16px;
+    }
   }
 
   &__comments {
@@ -222,7 +360,13 @@
   flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 32px;
+
+  @include mq(tab) {
+    margin-bottom: 40px;
+    gap: 32px;
+  }
 }
+
 .modal-item {
   @include flexCenter();
   align-items: flex-end;
@@ -263,6 +407,7 @@
     border-radius: 15px;
 
     margin-top: 85px;
+
     &::before {
       content: '';
       position: absolute;
@@ -339,4 +484,11 @@
   /* or 20px */
 
   color: #131313;
+
+  @include mq(tab) {
+    margin-bottom: 32px;
+  }
+}
+.franchise-title {
+  margin-bottom: 20px;
 }
