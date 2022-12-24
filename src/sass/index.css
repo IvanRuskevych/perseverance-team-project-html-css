@@ -235,12 +235,20 @@ body {
   }
 }
 .modal__title {
+  padding-left: 64px;
+  padding-right: 64px;
+  margin-bottom: 20px;
   text-align: center;
   font-family: "Seymour One";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+@media screen and (min-width: 768px) {
+  .modal__title {
+    margin-bottom: 24px;
+  }
 }
 .modal__icecream-image {
   position: relative;
@@ -250,6 +258,11 @@ body {
   margin-bottom: 22px;
   width: 132px;
   height: 136px;
+}
+@media screen and (min-width: 768px) {
+  .modal__icecream-image {
+    margin-bottom: 24px;
+  }
 }
 .modal__icecream-image::before {
   content: "";
@@ -274,6 +287,11 @@ body {
   text-align: center;
   color: #131313;
 }
+@media screen and (min-width: 768px) {
+  .modal__posttitle {
+    margin-bottom: 20px;
+  }
+}
 .modal--icecream-paddings {
   padding: 28px 20px;
 }
@@ -287,6 +305,7 @@ body {
   .modal-icechololate__list {
     padding-left: 124px;
     padding-right: 124px;
+    margin-bottom: 48px;
   }
 }
 .modal-icechololate__item {

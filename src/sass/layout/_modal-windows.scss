@@ -61,6 +61,9 @@
   }
 
   &__title {
+    padding-left: 64px;
+    padding-right: 64px;
+    margin-bottom: 20px;
     text-align: center;
     // margin-bottom: 20px;
 
@@ -69,6 +72,10 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+
+    @include mq(tab) {
+      margin-bottom: 24px;
+    }
   }
   &__icecream-image {
     position: relative;
@@ -78,6 +85,10 @@
     margin-bottom: 22px;
     width: 132px;
     height: 136px;
+
+    @include mq(tab) {
+      margin-bottom: 24px;
+    }
   }
   &__icecream-image::before {
     content: '';
@@ -110,6 +121,9 @@
     text-align: center;
 
     color: #131313;
+    @include mq(tab) {
+      margin-bottom: 20px;
+    }
   }
 
   &--icecream-paddings {
@@ -128,6 +142,7 @@
     @include mq(tab) {
       padding-left: 124px;
       padding-right: 124px;
+      margin-bottom: 48px;
     }
   }
   &__item {
