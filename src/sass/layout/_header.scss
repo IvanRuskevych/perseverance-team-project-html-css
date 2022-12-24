@@ -1,10 +1,14 @@
+.header-container{
+    height: 80px;
+}
 .header__wrapper{
     position: relative;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     display: flex;
     border: 1px solid green;
 }
+
 .header__menu-button{
     position: absolute;
     z-index: 99;
@@ -12,8 +16,11 @@
     right: 5px;
     width: 24px;
     height: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $mainBgColor;
+    border: none
 }
 .header__list{
     text-align: center;
@@ -30,10 +37,16 @@
     font-size: 32px;
     line-height: 39px;
     color: $btnSecondActiveColor;
+
+    &:hover,
+    &:focus{
+        color: #131313;
+    }
 }
-.header__button-order{
+.header__button-order,
+.button-order{
     @extend %button;
-    display: block;
+    display: none;
     width: 152px;
     height: 42px;
     margin-top: 100px;
@@ -50,24 +63,45 @@
         color: $btnSecondActiveColor;
       }
 }
+.button-order{
+    display: flex;
+}
 .button-order__icon{
     width: 12px;
     height: 12px;
-    background-color: red;
+    margin-left: 5px;
+    background-image: url(../images/arrow.svg);
 }
 .header__menu{
-    display: none;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     padding-top: 100px;
-    border: 1px solid red;
+    background-color: $mainBgColor;
+    z-index: 91;
 }
+.header__logotab,
+.header__logodesk{
+    display: none;
+}
+.header__logomob{
+    margin-left: 12px;
+    z-index: 100;
+}
+.header__menu-button--tablet{
+    display: none;
+}
+
 @media screen and(max-width: 1199px) {
+    .header__menu{
+        transform: translateX(-150%);
+        transition: transform 250ms linear;   
+    }
     .header__menu.is-open{
         display: block;
+        transform: translateX(0);
     }
     .icon-close{
         display: none;
@@ -77,34 +111,77 @@
     }
     .header__menu-button.is-open .icon-open{
         display: none;
-    }
-    
+    }   
 }
 @media screen and (min-width: 768px){
+    .header__item{
+        margin-bottom: 40px; 
+    
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    .header__menu{
+        padding-top: 140px;
+    }
+    .header__menu-icon{
+        width: 100px;
+        height: 100px;
+    }
     .header__wrapper{
-        padding-top: 20px;
+        padding-top: 18px;
+        padding-bottom: 10px;
     }
     .header__menu-button{
-        width: 32px;
-        height: 32px;
-        top: 37px;
-        right: 180px;
-        
+        z-index: 50;
+
+        top: 32px;
+        right: 190px;
         text-align: center;
         background-color: $mainBgColor;
     }
     .header__button-order{
         position: absolute;
         top: 25px;
-        right: 5px;
+        right: 0px;
         margin: 0;
+    }
+    .icon-close{
+        position: absolute;
+    
+        top: 0;
+        right: 0;
+    }
+    .header__logomob,
+    .header__logodesk{
+        display: none;
+    }
+    .header__logotab{
+        display: block;
+        z-index: 100;
+    }
+    .header__button-order{
+        display: flex;
+        margin-top: -5px;
+    }
+    .button-order{
+        display: none;
+    }
+    .header__menu-button--tablet{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: red;
     }
 }
 @media screen and (min-width: 1200px){
+    .header__wrapper{
+        padding-top: 10px;
+    }
     .header__menu{
         position: static;
         height: auto;
-        border: 1px solid red;
         padding-top: 0;
         padding-left: 309px;
         display: flex;
@@ -127,6 +204,11 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 1.25;
+
+        &:hover,
+        &:focus{
+            color: $btnDefaultColor
+        }
     }
     .header__menu-button{
         display: none;
@@ -135,6 +217,19 @@
         position: static;
 
         margin: 0;
+    }
+    .header__logomob,
+    .header__logotab{
+        display: none;
+    }
+    .header__logodesk{
+        display: block;
+    }
+    .header__button-order{
+        display: none;
+    }
+    .button-order{
+        display: flex;
     }
 }
 
