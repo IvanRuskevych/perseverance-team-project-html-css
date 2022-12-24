@@ -52,29 +52,6 @@ body {
   overflow: hidden;
 }
 
-<<<<<<< HEAD
-.container {
-  max-width: 1200x;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-=======
 .button-typethree, .button-typetwo, .button-typeone, .button-submit {
   justify-content: center;
   align-items: center;
@@ -84,6 +61,195 @@ body {
   line-height: 18px;
   border-radius: 10px;
   border: none;
+}
+
+.container {
+  max-width: 1200x;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.contacts {
+  background-color: #84A178;
+}
+@media screen and (min-width: 768px) {
+  .contacts__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.contacts__cafe {
+  display: block;
+  background-color: #FCFCFC;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+@media screen and (max-width: 767px) {
+  .contacts__cafe {
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 40px 32px 24px;
+  }
+  .contacts__cafe:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts__cafe {
+    width: calc((100% - 32px) / 3);
+    padding: 40px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__cafe {
+    width: calc((100% - 64px) / 3);
+    padding: 40px 40px;
+  }
+}
+.contacts__title {
+  display: inline-block;
+  width: auto;
+  padding: 4px 22px;
+  padding-bottom: 4px;
+  background-color: #F8D24E;
+  border: none;
+  border-radius: 4px;
+  box-sizing: content-box;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.37;
+  letter-spacing: 0.04em;
+  color: #131313;
+}
+@media screen and (min-width: 768px) {
+  .contacts__title {
+    font-size: 16px;
+  }
+}
+.contacts__adress {
+  margin-top: 20px;
+  border-bottom: 1px solid #E1E1E1;
+}
+.contacts__caption {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: #131313;
+}
+@media screen and (min-width: 768px) {
+  .contacts__caption {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__caption {
+    font-size: 16px;
+    line-height: 1.88;
+  }
+}
+.contacts__map {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: #D6936D;
+}
+@media screen and (min-width: 768px) {
+  .contacts__map {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__map {
+    font-size: 16px;
+    line-height: 1.81;
+  }
+  .contacts__map:hover, .contacts__map:focus {
+    text-decoration: underline;
+  }
+}
+.contacts__hours {
+  padding: 24px 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: #ABABAB;
+  border-bottom: 1px solid #E1E1E1;
+}
+@media screen and (min-width: 768px) {
+  .contacts__hours {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__hours {
+    font-size: 16px;
+    line-height: 1.88;
+  }
+}
+.contacts__tel-mail {
+  padding-top: 24px;
+}
+.contacts__wrap-buttons {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .contacts__wrap-buttons {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts__wrap-buttons {
+    justify-content: center;
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__wrap-buttons {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts__buttons:first-child {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts__buttons:first-child {
+    margin-right: 16px;
+  }
 }
 
 .btn-wrap {
@@ -164,5 +330,4 @@ body {
 
 .size-franchise {
   width: 196px;
->>>>>>> 9417552ab1ace331f1964d68b222538e473334ee
 }/*# sourceMappingURL=index.css.map */
