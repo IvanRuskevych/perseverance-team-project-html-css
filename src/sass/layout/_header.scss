@@ -9,7 +9,8 @@
     border: 1px solid green;
 }
 
-.header__menu-button{
+.header__menu-button,
+.header__menu-button--tablet{
     position: absolute;
     z-index: 99;
     top: 20px;
@@ -114,6 +115,7 @@
     }   
 }
 @media screen and (min-width: 768px){
+
     .header__item{
         margin-bottom: 40px; 
     
@@ -125,8 +127,8 @@
         padding-top: 140px;
     }
     .header__menu-icon{
-        width: 100px;
-        height: 100px;
+        width: 22px;
+        height: 22px;
     }
     .header__wrapper{
         padding-top: 18px;
@@ -145,12 +147,6 @@
         top: 25px;
         right: 0px;
         margin: 0;
-    }
-    .icon-close{
-        position: absolute;
-    
-        top: 0;
-        right: 0;
     }
     .header__logomob,
     .header__logodesk{
@@ -172,7 +168,10 @@
         position: absolute;
         top: 0;
         right: 0;
-        background-color: red;
+        z-index: 200;
+    }
+    .icon-close--tablet{
+        display: block;
     }
 }
 @media screen and (min-width: 1200px){
