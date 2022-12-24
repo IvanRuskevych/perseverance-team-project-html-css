@@ -75,6 +75,7 @@
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 22px;
     width: 132px;
     height: 136px;
   }
@@ -123,6 +124,11 @@
   &__list {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
+    @include mq(tab) {
+      padding-left: 124px;
+      padding-right: 124px;
+    }
   }
   &__item {
     position: relative;

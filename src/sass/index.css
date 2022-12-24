@@ -247,6 +247,7 @@ body {
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 22px;
   width: 132px;
   height: 136px;
 }
@@ -280,6 +281,13 @@ body {
 .modal-icechololate__list {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .modal-icechololate__list {
+    padding-left: 124px;
+    padding-right: 124px;
+  }
 }
 .modal-icechololate__item {
   position: relative;
