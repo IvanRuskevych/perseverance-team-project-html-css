@@ -1,10 +1,15 @@
 .slide {
     background-image: url(../images/customer-reviews/frame/frame-mobile-1x.png);
-    height: 1037px;
+
+
 }
 
 .slide__img {
     margin-bottom: 80px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 100px;
+    }
 }
 
 .slide__client {
@@ -18,12 +23,24 @@
 .content {
     display: flex;
     justify-content: center;
-    height: 256px;
+
     margin-bottom: 32px;
     padding: 35px 39px;
     background: #84A178;
     border-radius: 10px;
     text-align: center;
+
+    @media screen and (max-width: 767px) {
+        height: 256px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 35px 80px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        height: 138px;
+    }
 }
 
 .slide__text {
@@ -35,12 +52,25 @@
     font-size: 12px;
     line-height: 255%;
 
+
+    text-align: center;
+
     color: #FCFCFC;
 
+    @media screen and (min-width: 768px) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 186%;
+
+
+        text-align: center;
+        letter-spacing: 0.04em;
+    }
 }
 
 .location {
     margin-bottom: 12px;
+
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -51,6 +81,15 @@
     text-align: center;
 
     color: #131313;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+
+        font-size: 16px;
+        line-height: 186%;
+
+        text-align: center;
+    }
 }
 
 visually-hidden {
@@ -80,9 +119,11 @@ visually-hidden {
     top: -32px;
     // right: 0;
     padding-bottom: 401px;
-    // max-width: 1000px;
-    // position: relative;
     margin: auto;
+
+    @media screen and (min-width: 768px) {
+        top: -144px;
+    }
 }
 
 
