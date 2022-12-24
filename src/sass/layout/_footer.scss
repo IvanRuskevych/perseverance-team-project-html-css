@@ -1,0 +1,118 @@
+.footer {
+    padding-top: 0;
+
+    &__wrapper {
+        color: #FCFCFC;
+        width: 100%;
+
+        @include mq(mob) {}
+
+        @include mq(tab) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__descr {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        @include mq(tab) {
+            width: 352px;
+            gap: 8px;
+        }
+
+        @include mq(desk) {
+            width: 352px;
+            gap: 14px;
+        }
+    }
+
+    &__subtitle {
+        width: 232px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #FCFCFC;
+    }
+
+    &__title {
+        width: 200px;
+
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 41px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #FCFCFC;
+
+        @include mq(tab) {}
+
+        @include mq(desk) {}
+    }
+
+    &-social {
+
+        &__list {
+            margin-top: 60px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+
+        &__icon {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    &__phone {
+        margin-top: 20px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.86;
+        color: #131313;
+
+        @include mq(tab) {
+            margin-top: 34px;
+        }
+
+        @include mq(desk) {
+            margin-top: 40px;
+        }
+
+        a {
+            color: #FCFCFC;
+        }
+    }
+
+    &__rights {
+        padding-top: 20px;
+        margin-top: 40px;
+        border-top: 1px solid #E1E1E1;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.52;
+        text-align: center;
+        color: #7A7A7A;
+        width: 100vw;
+
+        &-descr {
+            width: 150px;
+            margin: 0 auto;
+
+            @include mq(tab) {
+                width: 100%;
+            }
+        }
+
+        @include mq(desk) {
+            width: 100%;
+        }
+
+
+    }
+}
