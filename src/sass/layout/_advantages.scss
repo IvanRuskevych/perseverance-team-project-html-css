@@ -1,94 +1,39 @@
 .advan {
   padding-top: 61px;
   padding-bottom: 64px;
-  &__slogan {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: calc(22 / 18);
-    text-align: center;
-    text-transform: uppercase;
-    color: #fcfcfc;
-    margin-bottom: 12px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 204px;
   }
-  &__question {
-    font-family: 'Seymour One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 38px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #fcfcfc;
-    margin-bottom: 32px;
-  }
-  &__img {
-    width: 280px;
-    margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  &__description {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 176%;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #fcfcfc;
-    &-one {
-      margin-bottom: 4px;
-    }
-    &-two {
-      margin-bottom: 10px;
-    }
-    &-three {
-      display: none;
-    }
-  }
-  &__button {
-    position: relative;
-    width: 164px;
-    height: 42px;
-    padding: 12px 34px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: calc(18 / 14);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-    color: #000000;
-    background: #f8d24e;
-    border-radius: 10px;
-    border-color: transparent;
-    cursor: pointer;
-  &::after{
-    content: " ";
-    position: absolute;
-    bottom: 12px;
-    right: 25px;
-    width: 12px;
-    height: 12px;
-    margin-left: 12px;
-    background-image: url(../images/arrow.png);
-    
-  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 178px;
   }
   &__list {
     margin-left: auto;
     margin-right: auto;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
   &__item {
     text-align: center;
     &:not(:last-child) {
-      margin-bottom: 100px;
+      margin-bottom: 28px;
+      @media screen and (min-width: 768px) {
+        margin: 0;
+        margin-right: 80px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-right: 32px;
+      }
     }
   }
   &__quality {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 16px;
     font-weight: 700;
     font-size: 36px;
@@ -96,39 +41,53 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #fcfcfc;
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+      margin-bottom: 12px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 58px;
+      margin-bottom: 12px;
+    }
     &--first::before {
-      content: " ";
-      position: absolute;
-      top: -60px;
-      left: 50%;
+      content: ' ';
       width: 50px;
       height: 50px;
-      margin-bottom: 16px;
-      transform: translateX(-50%); 
       background-image: url(../images/cow.png);
+      margin-bottom: 16px;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 40px;
+      }
     }
-        &--second::before {
-          content: " ";
-          position: absolute;
-          top: -60px;
-          left: 50%;
-          width: 50px;
-          height: 50px;
-          margin-bottom: 16px;
-          transform: translateX(-50%);
-          background-image: url(../images/weight.png);
-        }
-                &--third::before {
-                  content: " ";
-                  position: absolute;
-                  top: -60px;
-                  left: 50%;
-                  width: 50px;
-                  height: 50px;
-                  margin-bottom: 16px;
-                  transform: translateX(-50%);
-                  background-image: url(../images/ice_cream.png);
-                }
+    &--second::before {
+      content: ' ';
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/weight.png);
+      margin-bottom: 16px;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 40px;
+      }
+    }
+    &--third::before {
+      content: ' ';
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/ice_cream.png);
+      margin-bottom: 16px;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 40px;
+      }
+    }
   }
   &__quality-description {
     margin-left: auto;
@@ -138,5 +97,13 @@
     font-size: 12px;
     line-height: 170%;
     color: #fcfcfc;
+    @media screen and (min-width: 768px) {
+      width: 152px;
+      font-size: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 368px;
+      font-size: 16px;
+    }
   }
 }
