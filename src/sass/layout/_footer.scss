@@ -1,5 +1,11 @@
 .footer {
-    padding-top: 0;
+    padding-top: 60px;
+    @include mq(tab) {
+        padding-top: 44px;
+    }
+    @include mq(desk) {
+        padding-top: 119px;
+    }
 
     &__wrapper {
         color: #FCFCFC;
