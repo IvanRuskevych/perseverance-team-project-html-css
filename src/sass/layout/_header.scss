@@ -52,25 +52,22 @@
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
+    fill: $btnMainColor;
 
     background-color: $btnDefaultColor;
 
-      &:hover {
-        background-color: $btnFirstActiveColor;
-      }
+      &:hover,
       &:focus {
         background-color: $btnFirstActiveColor;
         color: $btnSecondActiveColor;
+        fill: $btnSecondActiveColor;
       }
 }
 .button-order{
     display: flex;
 }
-.button-order__icon{
-    width: 12px;
-    height: 12px;
-    margin-left: 5px;
-    background-image: url(../images/arrow.svg);
+.header__button-icon{
+    margin-left: 6px;
 }
 .header__menu{
     position: absolute;
@@ -93,7 +90,6 @@
 .header__menu-button--tablet{
     display: none;
 }
-
 @media screen and(max-width: 1199px) {
     .header__menu{
         transform: translateX(-150%);
