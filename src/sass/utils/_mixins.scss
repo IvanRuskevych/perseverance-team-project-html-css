@@ -87,4 +87,9 @@
       @content;
     }
   }
+  @if $type == 'mob_sm-tab' {
+    @media screen and (min-width: $mobile-sm) and (max-width: ($desktop - 0.02)) {
+      @content;
+    }
+  }
 }

@@ -432,7 +432,6 @@ body {
   padding-top: 10px;
   padding-bottom: 20px;
   display: flex;
-  border: 1px solid green;
 }
 
 .header__menu-button,
@@ -479,26 +478,23 @@ body {
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
+  fill: #000000;
   background-color: #f8d24e;
 }
-.header__button-order:hover,
-.button-order:hover {
-  background-color: #0a8817;
-}
-.header__button-order:focus,
+.header__button-order:hover, .header__button-order:focus,
+.button-order:hover,
 .button-order:focus {
   background-color: #0a8817;
   color: #fcfcfc;
+  fill: #fcfcfc;
 }
 
 .button-order {
   display: flex;
 }
 
-.button-order__icon {
-  width: 12px;
-  height: 12px;
-  margin-left: 5px;
+.header__button-icon {
+  margin-left: 6px;
 }
 
 .header__menu {
@@ -573,7 +569,7 @@ body {
   .header__button-order {
     position: absolute;
     top: 25px;
-    right: 0px;
+    right: 2px;
     margin: 0;
   }
   .header__logomob,
@@ -594,12 +590,15 @@ body {
   .header__menu-button--tablet {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 38px;
+    right: 38px;
     z-index: 200;
   }
   .icon-close--tablet {
     display: block;
+  }
+  .header__menu-button.is-open .icon-close {
+    display: none;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -652,6 +651,9 @@ body {
   }
   .button-order {
     display: flex;
+  }
+  .header__menu-button--tablet {
+    display: none;
   }
 }
 .advan {
@@ -794,34 +796,34 @@ body {
 }
 
 .slide {
-  background-image: url(../images/customer-reviews/frame/frame-mobile-1x.jpg);
+  background-image: url(../images/customer-reviews/frame/frame-mobile-1x.webp);
   height: 1037px;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .slide {
-    background-image: url(../images/customer-reviews/frame/frame-mobile-2x.jpg);
+    background-image: url(../images/customer-reviews/frame/frame-mobile-2x.webp);
   }
 }
 @media screen and (min-width: 768px) {
   .slide {
-    background-image: url(../images/customer-reviews/frame/frame-tablet-1x.jpg);
+    background-image: url(../images/customer-reviews/frame/frame-tablet-1x.webp);
     height: 1017px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .slide {
-    background-image: url(../images/customer-reviews/frame/frame-tablet-2x.png);
+    background-image: url(../images/customer-reviews/frame/frame-tablet-2x.webp);
   }
 }
 @media screen and (min-width: 1200px) {
   .slide {
-    background-image: url(../images/customer-reviews/frame/frame-desktop-1x.jpg);
+    background-image: url(../images/customer-reviews/frame/frame-desktop-1x.webp);
     height: 1053px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .slide {
-    background-image: url(../images/customer-reviews/frame/frame-desktop-2x.jpg);
+    background-image: url(../images/customer-reviews/frame/frame-desktop-2x.webp);
   }
 }
 
