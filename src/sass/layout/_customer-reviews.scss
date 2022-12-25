@@ -1,34 +1,34 @@
 .slide {
-    background-image: url(../images/customer-reviews/frame/frame-mobile-1x.jpg);
+    background-image: url(../images/customer-reviews/frame/frame-mobile-1x.webp);
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(../images/customer-reviews/frame/frame-mobile-2x.jpg);
+        background-image: url(../images/customer-reviews/frame/frame-mobile-2x.webp);
     }
 
     height: 1037px;
 
 
     @media screen and (min-width: 768px) {
-        background-image: url(../images/customer-reviews/frame/frame-tablet-1x.jpg);
+        background-image: url(../images/customer-reviews/frame/frame-tablet-1x.webp);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../images/customer-reviews/frame/frame-tablet-2x.png);
+            background-image: url(../images/customer-reviews/frame/frame-tablet-2x.webp);
         }
 
         height: 1017px;
     }
 
     @media screen and (min-width: 1200px) {
-        background-image: url(../images/customer-reviews/frame/frame-desktop-1x.jpg);
+        background-image: url(../images/customer-reviews/frame/frame-desktop-1x.webp);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../images/customer-reviews/frame/frame-desktop-2x.jpg);
+            background-image: url(../images/customer-reviews/frame/frame-desktop-2x.webp);
         }
 
         height: 1053px;
@@ -135,18 +135,18 @@
 
 }
 
- visually-hidden {
-     position: absolute;
-     white-space: nowrap;
-     width: 1px;
-     height: 1px;
-     overflow: hidden;
-     border: 0;
-     padding: 0;
-     clip: rect(0 0 0 0);
-     clip-path: inset(50%);
-     margin: -1px;
- }
+visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 
 .mySlides {
     display: none
