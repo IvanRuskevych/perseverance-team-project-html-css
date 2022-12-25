@@ -4,19 +4,21 @@
 @import './utils/mixins.scss';
 
 @import './base/common';
-@import './base/container';
 
 // utils styles
+@import './utils/mixins.scss';
+@import './utils/placeholders';
+@import './base/container';
 
-@import './utils/placeholders'; // layout styles
+// layout styles
 
-// @import './layout/hero';
-// @import './layout/header';
-// @import './layout/products';
-// @import './layout/about';
-// @import './layout/advanteges';
-// @import './layout/gallery';
-// @import './layout/customer-reviews';
-// @import './layout/contacts';
+@import './layout/hero';
+@import './layout/header';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/customer-reviews';
+@import './layout/contacts';
 @import './layout/footer';
-// @import './layout/buttons';
+@import './layout/buttons';
