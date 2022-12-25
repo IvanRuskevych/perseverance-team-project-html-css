@@ -67,9 +67,23 @@
             }
         }
 
+        &__link {
+            display: block;
+            color: #84A178;
+            width: 32px;
+            height: 32px;
+            background-color: #F8D24E;
+			border-radius: 50%;
+            &:hover,
+            &:focus {
+                color: #FCFCFC;
+            }
+        }
+
         &__icon {
             width: 32px;
             height: 32px;
+            fill: currentColor;
         }
     }
 
@@ -114,8 +128,9 @@
         }
 
         @include mq(desk) {
-            width: 1200px;
+            width: 1167px;
             padding: 12px 17px;
+            margin: 60px auto;
         }
 
 
