@@ -28,7 +28,8 @@
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
   padding: 32px 60px;
-  border-radius: 3px;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
   background-color: #fff;
   transition: 0.3s all;
 
@@ -81,8 +82,8 @@
     height: 20px;
   }
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 16.5px;
+  right: 16.5px;
   fill: currentColor;
   cursor: pointer;
 }
