@@ -14,19 +14,18 @@ menuBtnRef.addEventListener("click", () => {
     mobileMenuRef.classList.toggle("is-open");
 
     mobileMenuBodyRef.classList.toggle("menu-is-open");
+   
+});
+menuCloseBtnRef.addEventListener("click", () => {
+    const expanded = 
+    menuBtnRef.getAttribute("aria-expanded") === "true" || false;
 
-    menuCloseBtnRef.getAttribute("aria-expanded") === "true" || false;
-    menuCloseBtnRef.classList.toggle("is-open");
-    menuCloseBtnRef.setAttribute("aria-expanded", !expanded);
+    menuBtnRef.classList.toggle("is-open");
+    menuBtnRef.setAttribute("aria-expanded", !expanded);
+
     mobileMenuRef.classList.toggle("is-open");
 
     mobileMenuBodyRef.classList.toggle("menu-is-open");
-
-
-
-
+   
 });
-// function toggleModal(){
-//     document.body.classList.toggle("modal-open");
-    
-// }
+
