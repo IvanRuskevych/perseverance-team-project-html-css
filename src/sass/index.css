@@ -1145,6 +1145,129 @@ visually-hidden {
   }
 }
 
+.footer {
+  padding-top: 0;
+}
+.footer__wrapper {
+  color: #FCFCFC;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-end;
+  }
+}
+.footer__descr {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media screen and (min-width: 768px) {
+  .footer__descr {
+    width: 352px;
+    gap: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__descr {
+    width: 352px;
+    gap: 14px;
+  }
+}
+.footer__subtitle {
+  width: 232px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #FCFCFC;
+}
+.footer__title {
+  width: 200px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FCFCFC;
+}
+.footer-social__list {
+  margin-top: 60px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer-social__list {
+    margin: 0;
+  }
+}
+.footer-social__link {
+  display: block;
+  color: #84A178;
+  width: 32px;
+  height: 32px;
+  background-color: #F8D24E;
+  border-radius: 50%;
+}
+.footer-social__link:hover, .footer-social__link:focus {
+  color: #FCFCFC;
+}
+.footer-social__icon {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+}
+.footer__phone {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  color: #131313;
+}
+@media screen and (min-width: 768px) {
+  .footer__phone {
+    margin-top: 34px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__phone {
+    margin-top: 40px;
+  }
+}
+.footer__phone a {
+  color: #FCFCFC;
+}
+.footer__rights {
+  padding: 20px;
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  color: #7A7A7A;
+  border-top: 1px solid #E1E1E1;
+}
+.footer__rights-descr {
+  width: 150px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .footer__rights-descr {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__rights {
+    width: 1167px;
+    padding: 12px 17px;
+    margin: 60px auto;
+  }
+}
+
 .btn-wrap {
   margin-top: 50px;
   display: inline-flex;
