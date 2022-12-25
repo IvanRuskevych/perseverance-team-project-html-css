@@ -6,7 +6,6 @@
     padding-top: 10px;
     padding-bottom: 20px;
     display: flex;
-    border: 1px solid green;
 }
 
 .header__menu-button,
@@ -145,7 +144,7 @@
     .header__button-order{
         position: absolute;
         top: 25px;
-        right: 0px;
+        right: 2px;
         margin: 0;
     }
     .header__logomob,
@@ -166,13 +165,17 @@
     .header__menu-button--tablet{
         display: block;
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 38px;
+        right: 38px;
         z-index: 200;
     }
     .icon-close--tablet{
         display: block;
     }
+    .header__menu-button.is-open .icon-close{
+        display: none;
+    }
+
 }
 @media screen and (min-width: 1200px){
     .header__wrapper{
@@ -229,6 +232,9 @@
     }
     .button-order{
         display: flex;
+    }
+    .header__menu-button--tablet{
+        display: none;
     }
 }
 
