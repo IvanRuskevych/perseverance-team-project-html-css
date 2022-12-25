@@ -7,6 +7,11 @@
 // main styles of buttons
 .button-submit {
   @extend %button;
+  display: flex;
+
+  margin-left: auto;
+  margin-right: auto;
+
   width: 121px;
   background-color: $btnDefaultColor;
 }
