@@ -1,0 +1,251 @@
+<!-- modal form for BUY NOW -->
+<div class="modal" data-modal="15">
+  <button class="modal__button js-modal-close" type="button" data-modal="15">
+    <svg class="modal__icon" width="11" height="11">
+      <use href="./images/modals-b-i-f/icons-modals.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <h2 class="modal__title">Buy now</h2>
+
+  <div class="modal-list">
+    <label class="modal-list__toggle">
+      <input class="modal__input--hidden" type="checkbox" />
+      <div class="modal-item modal-item__icecream">
+        <h3 class="modal-item__text modal-item__icecream--image">ice cream</h3>
+      </div>
+    </label>
+    <label class="modal-list__toggle">
+      <input class="modal__input--hidden" type="checkbox" />
+      <div class="modal-item modal-item__icecoffee">
+        <h3 class="modal-item__text modal-item__icecoffee--image">
+          ice coffee
+        </h3>
+      </div>
+    </label>
+    <label class="modal-list__toggle">
+      <input class="modal__input--hidden" type="checkbox" />
+      <div class="modal-item modal-item__milkshake">
+        <h3 class="modal-item__text modal-item__milkshake--image">milkshake</h3>
+      </div>
+    </label>
+  </div>
+
+  <form class="modal-form">
+    <label class="modal-form__label">
+      <input
+        class="modal-form__input"
+        type="text"
+        name="user-name"
+        placeholder="Name"
+        required
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        title="Username must be two words separated by space."
+      />
+    </label>
+
+    <label class="modal-form__label">
+      <input
+        class="modal-form__input"
+        type="tel"
+        name="tel"
+        placeholder="Phone"
+        required
+        pattern="[0-9]{3} [0-9]{7}"
+        title="Format 012 3456789"
+      />
+    </label>
+
+    <textarea
+      class="modal-form__comments"
+      name="comments"
+      cols="30"
+      rows="10"
+      placeholder="Comment"
+    ></textarea>
+
+    <button
+      class="button-submit active-typethree button__buy-now"
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+
+<!-- modal form for Chololate icecream -->
+<div class="modal modal--icecream-paddings" data-modal="16">
+  <button class="modal__button js-modal-close" type="button" data-modal="16">
+    <svg class="modal__icon" width="11" height="11">
+      <use href="./images/modals-b-i-f/icons-modals.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <h2 class="modal__title modal__title--chololate">Chololate icecream</h2>
+  <div class="modal__icechololate--wrap">
+    <div class="modal__icechololate--image"></div>
+  </div>
+  <ul class="modal-icechololate__list">
+    <li class="modal-icechololate__item">
+      <p class="modal-icechololate__text">kcal</p>
+      <div class="modal-icechololate__circle">
+        <p class="modal-icechololate__circle-text">320</p>
+      </div>
+    </li>
+    <li class="modal-icechololate__item">
+      <p class="modal-icechololate__text">Prote...</p>
+      <div class="modal-icechololate__circle">
+        <p class="modal-icechololate__circle-text">4g</p>
+      </div>
+    </li>
+    <li class="modal-icechololate__item">
+      <p class="modal-icechololate__text">Fats</p>
+      <div class="modal-icechololate__circle">
+        <p class="modal-icechololate__circle-text">8,2g</p>
+      </div>
+    </li>
+    <li class="modal-icechololate__item">
+      <p class="modal-icechololate__text">Carbs</p>
+      <div class="modal-icechololate__circle">
+        <p class="modal-icechololate__circle-text">40,4g</p>
+      </div>
+    </li>
+  </ul>
+  <h3 class="modal__posttitle">Ingredients</h3>
+  <ul class="ingredients-list ingredients-first list">
+    <li class="ingredients-list__item">
+      <p class="ingredients-list__text text-left">Milk</p>
+      <p class="ingredients-list__text text-right">100ml</p>
+    </li>
+    <li class="ingredients-list__item">
+      <p class="ingredients-list__text text-left">Belgian chocolate</p>
+      <p class="ingredients-list__text text-right">20g</p>
+    </li>
+    <li class="ingredients-list__item">
+      <p class="ingredients-list__text text-left">Cream</p>
+      <p class="ingredients-list__text text-right">150 ml</p>
+    </li>
+    <li class="ingredients-list__item">
+      <p class="ingredients-list__text text-left">Cocoa powder</p>
+      <p class="ingredients-list__text text-right">30g</p>
+    </li>
+    <li class="ingredients-list__item">
+      <p class="ingredients-list__text text-left">Sugar</p>
+      <p class="ingredients-list__text text-right">40g</p>
+    </li>
+    <li class="ingredients-list__item">
+      <p class="ingredients-list__text text-left">Vanilla sugar</p>
+      <p class="ingredients-list__text text-right">10g</p>
+    </li>
+  </ul>
+
+  <form class="modal-form">
+    <label class="modal-form__label">
+      <input
+        class="modal-form__input"
+        type="text"
+        name="user-name"
+        placeholder="Name"
+        required
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        title="Username must be two words separated by space."
+      />
+    </label>
+
+    <label class="modal-form__label">
+      <input
+        class="modal-form__input"
+        type="tel"
+        name="tel"
+        placeholder="Phone"
+        required
+        pattern="[0-9]{3} [0-9]{7}"
+        title="Format 012 3456789"
+      />
+    </label>
+
+    <textarea
+      class="modal-form__comments"
+      name="comments"
+      cols="30"
+      rows="10"
+      placeholder="Comment"
+    ></textarea>
+
+    <button
+      class="button-submit active-typethree button__buy-now"
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+
+<!-- modal form for Franchise -->
+<div class="modal" data-modal="17">
+  <button class="modal__button js-modal-close" type="button" data-modal="17">
+    <svg class="modal__icon" width="11" height="11">
+      <use href="./images/modals-b-i-f/icons-modals.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h2 class="modal__title franchise-title">
+    Thank you for your interest in owning an Ice Cream shop
+  </h2>
+  <form class="modal-form">
+    <p class="franchise-text">
+      Due to the overwhelming volume of franchise requests we are not accepting
+      new franchisee applications at this time. Once the application process
+      resumes, we will contact you for further information. Please fill out the
+      contact information below and we will reach out for additional
+      information. We appreciate your patience.
+    </p>
+    <label class="modal-form__label">
+      <input
+        class="modal-form__input"
+        type="text"
+        name="user-name"
+        placeholder="Name"
+        required
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        title="Username must be two words separated by space."
+      />
+    </label>
+
+    <label class="modal-form__label">
+      <input
+        class="modal-form__input"
+        type="tel"
+        name="tel"
+        placeholder="Phone"
+        required
+        pattern="[0-9]{3} [0-9]{7}"
+        title="Format 012 3456789"
+      />
+    </label>
+
+    <label class="modal-form__label">
+      <input
+        class="modal-form__input"
+        type="email"
+        name="email"
+        placeholder="Email"
+        required
+      />
+    </label>
+
+    <textarea
+      class="modal-form__comments"
+      name="comments"
+      cols="30"
+      rows="10"
+      placeholder="Comment"
+    ></textarea>
+
+    <button
+      class="button-submit active-typethree button__franchise"
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</div>

@@ -1,3 +1,4 @@
+
 body.menu-is-open{
   overflow: hidden;
 }
@@ -5,7 +6,7 @@ body.menu-is-open{
   height: 99px;
   padding-bottom: 19px;
 }
-.header__wrapper{
+.header__wrapper {
   position: relative;
   padding-top: 10px;
   padding-bottom: 20px;
@@ -16,7 +17,7 @@ body.menu-is-open{
   height: 100px;
 }
 .header__menu-button,
-.header__menu-button--tablet{
+.header__menu-button--tablet {
   position: absolute;
   z-index: 99;
   top: 20px;
@@ -27,19 +28,19 @@ body.menu-is-open{
   justify-content: center;
   align-items: center;
   background-color: $mainBgColor;
-  border: none
+  border: none;
 }
-.header__list{
+.header__list {
   text-align: center;
 }
-.header__item{
-  margin-bottom: 32px; 
+.header__item {
+  margin-bottom: 32px;
 
-  &:last-child{
-      margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
   }
 }
-.header__link{
+.header__link {
   font-weight: 700;
   font-size: 32px;
   line-height: 39px;
@@ -47,12 +48,12 @@ body.menu-is-open{
   @include oneTransition(color);
 
   &:hover,
-  &:focus{
-      color: #131313;
+  &:focus {
+    color: #131313;
   }
 }
 .header__button-order,
-.button-order{
+.button-order {
   @extend %button;
   display: none;
   width: 152px;
@@ -76,13 +77,13 @@ body.menu-is-open{
       fill: $btnSecondActiveColor;
     }
 }
-.button-order{
+.button-order {
   display: flex;
 }
-.header__button-icon{
+.header__button-icon {
   margin-left: 6px;
 }
-.header__menu{
+.header__menu {
   position: absolute;
   top: 0;
   left: 0;
@@ -99,33 +100,34 @@ body.menu-is-open{
   margin-left: 12px;
   z-index: 100;
 }
-.header__menu-button--tablet{
+.header__menu-button--tablet {
   display: none;
 }
 
 // media for script
 
 @media screen and(max-width: 1199px) {
-  .header__menu{
-      transform: translateX(-150%);
-      transition: transform 250ms linear;   
+  .header__menu {
+    transform: translateX(-150%);
+    transition: transform 250ms linear;
   }
-  .header__menu.is-open{
-      display: block;
-      transform: translateX(0);
+  .header__menu.is-open {
+    display: block;
+    transform: translateX(0);
   }
+
   .header__menu.is-open body{
     overflow: hidden;
 }
   .icon-close{
       display: none;
+}
+  .header__menu-button.is-open .icon-close {
+    display: block;
   }
-  .header__menu-button.is-open .icon-close{
-      display: block;
+  .header__menu-button.is-open .icon-open {
+    display: none;
   }
-  .header__menu-button.is-open .icon-open{
-      display: none;
-  }   
 }
 
 // other media
@@ -148,13 +150,13 @@ body.menu-is-open{
       padding-top: 140px;
       width: 768px;
   }
-  .header__menu-icon{
-      width: 22px;
-      height: 22px;
+  .header__menu-icon {
+    width: 22px;
+    height: 22px;
   }
-  .header__wrapper{
-      padding-top: 18px;
-      padding-bottom: 10px;
+  .header__wrapper {
+    padding-top: 18px;
+    padding-bottom: 10px;
   }
   .header__menu-button{
       z-index: 50;
@@ -163,42 +165,44 @@ body.menu-is-open{
       text-align: center;
       background-color: $mainBgColor;
   }
-  .header__button-order{
-      position: absolute;
-      top: 25px;
-      right: 2px;
-      margin: 0;
+
+  .header__button-order {
+    position: absolute;
+    top: 25px;
+    right: 2px;
+    margin: 0;
   }
   .header__logo{
       width: 48px;
       height: 44px;
   }
-  .header__button-order{
-      display: flex;
-      margin-top: -5px;
+
+  .header__button-order {
+    display: flex;
+    margin-top: -5px;
   }
-  .button-order{
-      display: none;
+  .button-order {
+    display: none;
   }
-  .header__menu-button--tablet{
-      display: block;
-      position: absolute;
-      top: 38px;
-      right: 38px;
-      z-index: 200;
+  .header__menu-button--tablet {
+    display: block;
+    position: absolute;
+    top: 38px;
+    right: 38px;
+    z-index: 200;
   }
-  .icon-close--tablet{
-      display: block;
+  .icon-close--tablet {
+    display: block;
   }
-  .header__menu-button.is-open .icon-close{
-      display: none;
+  .header__menu-button.is-open .icon-close {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__wrapper {
+    padding-top: 10px;
   }
 
-}
-@media screen and (min-width: 1200px){
-  .header__wrapper{
-      padding-top: 10px;
-  }
   .header-container{
     height: 118px;
     padding-bottom: 38px;
@@ -208,51 +212,51 @@ body.menu-is-open{
       width: 100%;
       height: auto;
       padding-top: 0;
-      padding-left: 309px;
+      padding-left: 300px;
       display: flex;
       justify-content:space-between;
       align-items: center;
   }
   .header__list{
-      display: flex;
+    display: flex;
+    align-items: center;
   }
   .header__item{
-      margin: 0;
-      margin-right: 28px;
+    margin-right: 28px;
+    margin-bottom: 0;
 
-      &:last-child{
-          margin-right: 0;
-      }
-  } 
-  .header__link{
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.25;
-
-      &:hover,
-      &:focus{
-          color: $btnDefaultColor
-      }
+    &:last-child{
+      margin-right: 0;
+    }
   }
-  .header__menu-button{
-      display: none;
-  }
-  .header__button-order{
-      position: static;
+  .header__link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
 
-      margin: 0;
+    &:hover,
+    &:focus {
+      color: $btnDefaultColor;
+    }
+  }
+  .header__menu-button {
+    display: none;
+  }
+  .header__button-order {
+    position: static;
+    margin: 0;
   }
   .header__logo{
       width: 60px;
       height: 65px;
   }
-  .header__button-order{
-      display: none;
+  .header__button-order {
+    display: none;
   }
-  .button-order{
-      display: flex;
+  .button-order {
+    display: flex;
   }
-  .header__menu-button--tablet{
-      display: none;
+  .header__menu-button--tablet {
+    display: none;
   }
 }

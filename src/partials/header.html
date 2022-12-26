@@ -1,18 +1,33 @@
 <header class="container header-container">
   <div class="header__wrapper">
-
     <!-- logo -->
-
+    
       <svg class="header__logo" width="60" height="65">
           <use href="./images/header-sprite.svg#icon-Logomob"></use>
       </svg>
 
-      <button class="header__menu-button" type="button" aria-expanded="false" data-menu-button>
-        <svg class="header__menu-icon" width="22" height="22" aria-label="Переключатель мобильного меню">
-          <use class="icon-open" href="./images/header-sprite.svg#icon-open"></use>
-          <use class="icon-close" href="./images/header-sprite.svg#icon-close"></use>
-        </svg>
-       </button>
+    <button
+      class="header__menu-button"
+      type="button"
+      aria-expanded="false"
+      data-menu-button
+    >
+      <svg
+        class="header__menu-icon"
+        width="22"
+        height="22"
+        aria-label="Переключатель мобильного меню"
+      >
+        <use
+          class="icon-open"
+          href="./images/header-sprite.svg#icon-open"
+        ></use>
+        <use
+          class="icon-close"
+          href="./images/header-sprite.svg#icon-close"
+        ></use>
+      </svg>
+    </button>
 
       <!-- menu -->
       
@@ -23,7 +38,7 @@
               <li class="header__item"><a class="header__link" href="#Our products">Our products</a></li>
               <li class="header__item"><a class="header__link" href="#contacts__cafe">Contact</a></li>
           </ul>
-          <button class="header__button-order button-order" type="button" data-menu>
+          <button class="header__button-order button-order js-open-modal"  data-modal="15" type="button" data-menu>
             Buy now
             <svg class="header__button-icon" width="12" height="12" aria-label="Переключатель мобильного меню">
               <use class="icon-arrow" href="./images/header-sprite.svg#icon-arrow"></use>
@@ -35,13 +50,14 @@
             </svg>
            </button>
       </nav>
-      <button class="header__button-order" type="button" data-menu>
-        Buy now
-          <svg class="header__button-icon" width="12" height="12" aria-label="Переключатель мобильного меню">
-            <use class="icon-arrow" href="./images/header-sprite.svg#icon-arrow"></use>
-          </svg>
-      </button>
-  </div>  
+    <button
+      class="header__button-order js-open-modal" type="button" data-modal="15" data-menu>
+      Buy now
+      <svg class="header__button-icon" width="12" height="12" aria-label="Переключатель мобильного меню">
+        <use class="icon-arrow" href="./images/header-sprite.svg#icon-arrow"></use>
+      </svg>
+    </button>
+  </div>
 </header>
 
 

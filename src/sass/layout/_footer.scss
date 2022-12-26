@@ -1,5 +1,13 @@
 .footer {
-    padding-top: 0;
+    padding-top: 60px;
+
+    @include mq(tab) {
+        padding-top: 44px;
+    }
+
+    @include mq(desk) {
+        padding-top: 119px;
+    }
 
     &__wrapper {
         color: #FCFCFC;
@@ -10,6 +18,9 @@
         @include mq(tab) {
             display: flex;
             justify-content: space-between;
+            align-items: center;
+        }
+        @include mq(desk) {
             align-items: self-end;
         }
     }
@@ -18,40 +29,59 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
-
+        width: 232px;
         @include mq(tab) {
             width: 352px;
             gap: 8px;
         }
 
         @include mq(desk) {
-            width: 352px;
+            width: 504px;
             gap: 14px;
         }
     }
 
     &__subtitle {
-        width: 232px;
+        
         font-weight: 700;
         font-size: 18px;
-        line-height: 22px;
+        line-height: 1.22;
         text-transform: uppercase;
         color: #FCFCFC;
+
+        @include mq(tab) {
+            font-size: 26px;
+            letter-spacing: 0.04em;
+            
+        }
+
+        @include mq(desk) {
+            font-weight: 400;
+            font-size: 30px;
+            
+        }
     }
 
     &__title {
-        width: 200px;
+        
 
         font-weight: 700;
         font-size: 34px;
-        line-height: 41px;
+        line-height: 1.21;
         letter-spacing: 0.04em;
         text-transform: uppercase;
         color: #FCFCFC;
 
-        @include mq(tab) {}
+        @include mq(tab) {
+            font-size: 48px;
+            letter-spacing: 0.06em;
+            
+        }
 
-        @include mq(desk) {}
+        @include mq(desk) {
+            font-size: 58px;
+            
+        }
     }
 
     &-social {
@@ -73,7 +103,8 @@
             width: 32px;
             height: 32px;
             background-color: #F8D24E;
-			border-radius: 50%;
+            border-radius: 50%;
+
             &:hover,
             &:focus {
                 color: #FCFCFC;
@@ -131,6 +162,7 @@
             width: 1167px;
             padding: 12px 17px;
             margin: 60px auto;
+            margin-bottom: 0;
         }
 
 
