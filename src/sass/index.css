@@ -1837,6 +1837,9 @@ visually-hidden {
     gap: 32px;
   }
 }
+.modal-list__toggle:hover {
+  cursor: pointer;
+}
 .modal__input--hidden {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -2132,13 +2135,22 @@ visually-hidden {
 .modal-item__icecream::before {
   content: "";
   position: absolute;
-  top: -50%;
+  top: -43%;
   left: 0;
   border-radius: 50%;
   width: 132px;
   height: 132px;
   background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+.modal-item__icecream--image::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: 0;
+  border-radius: 50%;
+  width: 132px;
+  height: 132px;
   background-image: url(../images/modals-b-i-f/icecream-280.jpg);
 }
 .modal-item__icecoffee {
@@ -2150,13 +2162,22 @@ visually-hidden {
 .modal-item__icecoffee::before {
   content: "";
   position: absolute;
-  top: -50%;
+  top: -43%;
   left: 0;
   border-radius: 50%;
   width: 132px;
   height: 132px;
   background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+.modal-item__icecoffee--image::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: 0;
+  border-radius: 50%;
+  width: 132px;
+  height: 132px;
   background-image: url(../images/modals-b-i-f/icecoffee-280.jpg);
 }
 .modal-item__milkshake {
@@ -2168,13 +2189,22 @@ visually-hidden {
 .modal-item__milkshake::before {
   content: "";
   position: absolute;
-  top: -50%;
+  top: -43%;
   left: 0;
   border-radius: 50%;
   width: 132px;
   height: 132px;
   background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+.modal-item__milkshake--image::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: 0;
+  border-radius: 50%;
+  width: 132px;
+  height: 132px;
   background-image: url(../images/modals-b-i-f/milkshake-280.jpg);
 }
 .modal-item__text {
