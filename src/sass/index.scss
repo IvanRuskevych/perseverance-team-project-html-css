@@ -1,6 +1,7 @@
 // base styles
 @import './base/reset';
 @import './base/variables';
+@import './utils/mixins.scss';
 
 @import './base/common';
 
@@ -14,11 +15,12 @@
 @import './layout/hero';
 @import './layout/header';
 @import './layout/products';
-// @import './layout/about';
+@import './layout/about';
 @import './layout/advantages';
 // @import './layout/gallery';
-// @import './layout/customer-reviews';
+@import './layout/customer-reviews';
 @import './layout/contacts';
-// @import './layout/footer';
+@import './layout/footer';
 @import './layout/buttons';
 @import './layout/modal-windows';
+@import './layout/modals-b-i-f';
