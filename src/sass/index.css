@@ -1758,6 +1758,7 @@ visually-hidden {
 /* Стили для активных классов подложки и окна */
 .modal.active,
 .overlay.active {
+  position: fixed;
   opacity: 1;
   visibility: visible;
 }
