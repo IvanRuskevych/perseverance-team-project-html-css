@@ -1,6 +1,7 @@
 // base styles
 @import './base/reset';
 @import './base/variables';
+@import './utils/mixins.scss';
 
 @import './base/common';
 
@@ -16,8 +17,15 @@
 @import './layout/products';
 @import './layout/about';
 @import './layout/advantages';
+<<<<<<< HEAD
 // @import './layout/gallery';
 // @import './layout/customer-reviews';
+=======
+
+@import './layout/customer-reviews';
+>>>>>>> 443680c7f0aa8cfa1292161cc2acd76d0ff07cd1
 @import './layout/contacts';
-// @import './layout/footer';
+@import './layout/footer';
 @import './layout/buttons';
+@import './layout/modal-windows';
+@import './layout/modals-b-i-f';
