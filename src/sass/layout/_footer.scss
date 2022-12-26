@@ -20,6 +20,7 @@
             justify-content: space-between;
             align-items: center;
         }
+
         @include mq(desk) {
             align-items: self-end;
         }
@@ -30,6 +31,7 @@
         flex-direction: column;
         gap: 16px;
         width: 232px;
+
         @include mq(tab) {
             width: 352px;
             gap: 8px;
@@ -42,7 +44,7 @@
     }
 
     &__subtitle {
-        
+
         font-weight: 700;
         font-size: 18px;
         line-height: 1.22;
@@ -52,18 +54,18 @@
         @include mq(tab) {
             font-size: 26px;
             letter-spacing: 0.04em;
-            
+
         }
 
         @include mq(desk) {
             font-weight: 400;
             font-size: 30px;
-            
+
         }
     }
 
     &__title {
-        
+
 
         font-weight: 700;
         font-size: 34px;
@@ -75,12 +77,12 @@
         @include mq(tab) {
             font-size: 48px;
             letter-spacing: 0.06em;
-            
+
         }
 
         @include mq(desk) {
             font-size: 58px;
-            
+
         }
     }
 
@@ -128,10 +130,14 @@
 
         @include mq(tab) {
             margin-top: 34px;
+            font-size: 14px;
         }
 
         @include mq(desk) {
             margin-top: 40px;
+            font-size: 16px;
+            letter-spacing: 0.02em;
+            ;
         }
 
         a {
