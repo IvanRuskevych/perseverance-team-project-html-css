@@ -6,7 +6,6 @@
   padding-top: 10px;
   padding-bottom: 20px;
   display: flex;
-  border: 1px solid green;
 }
 
 .header__menu-button,
@@ -53,25 +52,22 @@
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
+  fill: $btnMainColor;
 
   background-color: $btnDefaultColor;
 
-  &:hover {
-    background-color: $btnFirstActiveColor;
-  }
+  &:hover,
   &:focus {
     background-color: $btnFirstActiveColor;
     color: $btnSecondActiveColor;
+    fill: $btnSecondActiveColor;
   }
 }
 .button-order {
   display: flex;
 }
-.button-order__icon {
-  width: 12px;
-  height: 12px;
-  margin-left: 5px;
-  //   background-image: url(../images/arrow.svg);
+.header__button-icon {
+  margin-left: 6px;
 }
 .header__menu {
   position: absolute;
@@ -94,7 +90,6 @@
 .header__menu-button--tablet {
   display: none;
 }
-
 @media screen and(max-width: 1199px) {
   .header__menu {
     transform: translateX(-150%);
@@ -144,7 +139,7 @@
   .header__button-order {
     position: absolute;
     top: 25px;
-    right: 0px;
+    right: 2px;
     margin: 0;
   }
   .header__logomob,
@@ -165,12 +160,15 @@
   .header__menu-button--tablet {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 38px;
+    right: 38px;
     z-index: 200;
   }
   .icon-close--tablet {
     display: block;
+  }
+  .header__menu-button.is-open .icon-close {
+    display: none;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -227,5 +225,8 @@
   }
   .button-order {
     display: flex;
+  }
+  .header__menu-button--tablet {
+    display: none;
   }
 }
