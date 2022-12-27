@@ -14,7 +14,7 @@
   font-family: $ff;
   font-weight: $fw;
   font-size: $fs;
-  line-height: calc($lh/$fs);
+  line-height: calc($lh / $fs);
   letter-spacing: $ls;
 }
 
@@ -22,7 +22,7 @@
   font-family: Montserrat;
   font-weight: 600;
   font-size: 14px;
-  line-height: calc($lh/$fs);
+  line-height: calc($lh / $fs);
   color: $bcolor;
 }
 

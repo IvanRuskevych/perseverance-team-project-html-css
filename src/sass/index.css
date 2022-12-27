@@ -60,7 +60,7 @@ body {
   height: 42px;
   font-weight: 600;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.2857142857;
   border-radius: 10px;
   border: none;
 }
@@ -1744,9 +1744,9 @@ visually-hidden {
 /* Стили для подложки */
 .overlay {
   /* Скрываем подложку  */
+  position: fixed;
   opacity: 0;
   visibility: hidden;
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -1777,11 +1777,12 @@ visually-hidden {
   /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;
+  transition: 0.3s all;
+  padding: 28px;
 }
 @media screen and (min-width: 480px) {
   .modal {
-    padding: 28px;
-    width: 280px;
+    width: 320px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1809,10 +1810,10 @@ visually-hidden {
   margin-bottom: 20px;
   text-align: center;
   font-family: "Seymour One";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: 0;
 }
 .modal__title--chololate {
   padding-left: 69px;
@@ -1909,10 +1910,10 @@ visually-hidden {
 .modal__posttitle {
   margin-bottom: 24px;
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 1.4;
+  letter-spacing: 0;
   /* identical to box height, or 140% */
   text-align: center;
   color: #131313;
@@ -1929,6 +1930,10 @@ visually-hidden {
   .modal--icecream-paddings {
     padding: 32px 40px;
   }
+}
+.modal--scroll {
+  height: 100%;
+  overflow: scroll;
 }
 
 .modal-icechololate__list {
@@ -1956,10 +1961,10 @@ visually-hidden {
 .modal-icechololate__text {
   padding-bottom: 8px;
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 400;
   font-size: 10px;
-  line-height: 12px;
+  line-height: 1.2;
+  letter-spacing: 0;
   color: #131313;
 }
 .modal-icechololate__circle {
@@ -1977,10 +1982,10 @@ visually-hidden {
 }
 .modal-icechololate__circle-text {
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 500;
   font-size: 10px;
-  line-height: 28px;
+  line-height: 2.8;
+  letter-spacing: 0;
   /* or 280% */
   color: #131313;
 }
@@ -2005,12 +2010,12 @@ visually-hidden {
   margin-bottom: 11px;
 }
 .ingredients-list__text {
+  /* identical to box height, or 25px */
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 176%;
-  /* identical to box height, or 25px */
+  line-height: 1.7857142857;
+  letter-spacing: 0;
   letter-spacing: 0.04em;
   color: #131313;
 }
@@ -2095,14 +2100,13 @@ visually-hidden {
 }
 .modal-form__box-text {
   margin-bottom: 20px;
+  /* identical to box height */
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 20px;
-  /* identical to box height */
-  text-align: center;
+  line-height: 1.25;
   letter-spacing: 0.04em;
+  text-align: center;
   text-transform: uppercase;
   color: #131313;
 }
@@ -2114,12 +2118,12 @@ visually-hidden {
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;
   border-radius: 10px;
+  /* or 17px */
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 140%;
-  /* or 17px */
+  line-height: 1.4166666667;
+  letter-spacing: 0;
   color: #131313;
 }
 @media screen and (min-width: 768px) {
@@ -2145,12 +2149,12 @@ visually-hidden {
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;
   border-radius: 10px;
+  /* or 17px */
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 140%;
-  /* or 17px */
+  line-height: 1.4166666667;
+  letter-spacing: 0;
   color: #131313;
 }
 @media screen and (min-width: 768px) {
@@ -2292,14 +2296,13 @@ visually-hidden {
 }
 .modal-item__text {
   margin-bottom: 20px;
+  /* identical to box height */
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 20px;
-  /* identical to box height */
-  text-align: center;
+  line-height: 1.25;
   letter-spacing: 0.04em;
+  text-align: center;
   text-transform: uppercase;
   color: #131313;
 }
@@ -2307,12 +2310,12 @@ visually-hidden {
 .franchise-text {
   margin-bottom: 24px;
   text-align: initial;
+  /* or 20px */
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 140%;
-  /* or 20px */
+  line-height: 1.4285714286;
+  letter-spacing: 0;
   color: #131313;
 }
 @media screen and (min-width: 768px) {

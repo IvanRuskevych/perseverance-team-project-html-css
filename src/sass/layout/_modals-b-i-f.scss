@@ -2,10 +2,10 @@
 
 .overlay {
   /* Скрываем подложку  */
+  position: fixed;
   opacity: 0;
   visibility: hidden;
 
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -40,10 +40,11 @@
   /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;
+  transition: 0.3s all;
+  padding: 28px;
 
   @include mq(mob) {
-    padding: 28px;
-    width: 280px;
+    width: 320px;
   }
 
   @include mq(tab) {
@@ -69,12 +70,8 @@
   &__title {
     margin-bottom: 20px;
     text-align: center;
+    @include textStyle('Seymour One', 400, 16px, 24px, $ls: 0);
 
-    font-family: 'Seymour One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
     &--chololate {
       padding-left: 69px;
       padding-right: 69px;
@@ -179,11 +176,12 @@
 
   &__posttitle {
     margin-bottom: 24px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
+    @include textStyle('Montserrat', 500, 20px, 28px, 0);
+    // font-family: 'Montserrat';
+    // font-style: normal;
+    // font-weight: 500;
+    // font-size: 20px;
+    // line-height: 28px;
     /* identical to box height, or 140% */
 
     text-align: center;
@@ -199,6 +197,10 @@
     @include mq(tab) {
       padding: 32px 40px;
     }
+  }
+  &--scroll {
+    height: 100%;
+    overflow: scroll;
   }
 }
 
@@ -226,11 +228,12 @@
   }
   &__text {
     padding-bottom: 8px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
+    // font-family: 'Montserrat';
+    // font-style: normal;
+    // font-weight: 400;
+    // font-size: 10px;
+    // line-height: 12px;
+    @include textStyle('Montserrat', 400, 10px, 12px, 0);
 
     color: #131313;
   }
@@ -246,11 +249,13 @@
     border-radius: 50%;
     box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
     &-text {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 10px;
-      line-height: 28px;
+      // font-family: 'Montserrat';
+      // font-style: normal;
+      // font-weight: 500;
+      // font-size: 10px;
+      // line-height: 28px;
+      @include textStyle('Montserrat', 500, 10px, 28px, 0);
+
       /* or 280% */
 
       color: #131313;
@@ -277,12 +282,13 @@
     margin-bottom: 11px;
   }
   &__text {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 176%;
+    // font-family: 'Montserrat';
+    // font-style: normal;
+    // font-weight: 400;
+    // font-size: 14px;
+    // line-height: 176%;
     /* identical to box height, or 25px */
+    @include textStyle('Montserrat', 400, 14px, 25px, 0);
 
     letter-spacing: 0.04em;
 
@@ -385,15 +391,16 @@
   &__box-text {
     margin-bottom: 20px;
 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
+    // font-family: 'Montserrat';
+    // font-style: normal;
+    // font-weight: 700;
+    // font-size: 16px;
+    // line-height: 20px;
     /* identical to box height */
+    @include textStyle('Montserrat', 700, 16px, 20px, 0.04em);
 
     text-align: center;
-    letter-spacing: 0.04em;
+    // letter-spacing: 0.04em;
     text-transform: uppercase;
 
     color: #131313;
@@ -410,12 +417,13 @@
     border: 1px solid #84a178;
     border-radius: 10px;
 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 140%;
+    // font-family: 'Montserrat';
+    // font-style: normal;
+    // font-weight: 400;
+    // font-size: 12px;
+    // line-height: 140%;
     /* or 17px */
+    @include textStyle('Montserrat', 400, 12px, 17px, 0);
 
     color: #131313;
 
@@ -444,12 +452,13 @@
     border: 1px solid #84a178;
     border-radius: 10px;
 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 140%;
+    // font-family: 'Montserrat';
+    // font-style: normal;
+    // font-weight: 400;
+    // font-size: 12px;
+    // line-height: 140%;
     /* or 17px */
+    @include textStyle('Montserrat', 400, 12px, 17px, 0);
 
     color: #131313;
 
@@ -626,15 +635,17 @@
   &__text {
     margin-bottom: 20px;
 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
+    // font-family: 'Montserrat';
+    // font-style: normal;
+    // font-weight: 700;
+    // font-size: 16px;
+    // line-height: 20px;
+    // letter-spacing: 0.04em;
+
     /* identical to box height */
+    @include textStyle('Montserrat', 700, 16px, 20px, 0.04em);
 
     text-align: center;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
 
     color: #131313;
@@ -644,12 +655,13 @@
 .franchise-text {
   margin-bottom: 24px;
   text-align: initial;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 140%;
+  // font-family: 'Montserrat';
+  // font-style: normal;
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 140%;
   /* or 20px */
+  @include textStyle('Montserrat', 400, 14px, 20px, 0);
 
   color: #131313;
 
