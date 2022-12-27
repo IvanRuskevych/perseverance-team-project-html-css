@@ -27,12 +27,12 @@
 }
 
 @mixin oneTransition($property) {
-  transition: $property 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @mixin twoTransition($firstproperty, $secondproperty) {
-  transition: $firstproperty 1000ms cubic-bezier(0.4, 0, 0.2, 1),
-    $secondproperty 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $firstproperty 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    $secondproperty 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @mixin mq($type) {

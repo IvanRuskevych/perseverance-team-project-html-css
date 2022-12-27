@@ -156,8 +156,24 @@
       border-radius: 50%;
       width: 132px;
       height: 132px;
-
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
       background-image: url(../images/modals-b-i-f/icecreamchokol-280.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/modals-b-i-f/icecreamchokol-280@2x.jpg);
+      }
+
+      @media (min-device-pixel-ratio: 3),
+        (-webkit-min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+        background-image: url(../images/modals-b-i-f/icecreamchokol-280@3x.jpg);
+      }
     }
   }
 
@@ -331,7 +347,23 @@
       #d9d9d9;
 
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-image: url(../images/modals-b-i-f/icecream-280.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/modals-b-i-f/icecream-280@2x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 3),
+      (-webkit-min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../images/modals-b-i-f/icecream-280@3x.jpg);
+    }
   }
 
   &__box-bg {
@@ -468,7 +500,23 @@
       border-radius: 50%;
       width: 132px;
       height: 132px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
       background-image: url(../images/modals-b-i-f/icecream-280.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/modals-b-i-f/icecream-280@2x.jpg);
+      }
+
+      @media (min-device-pixel-ratio: 3),
+        (-webkit-min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+        background-image: url(../images/modals-b-i-f/icecream-280@3x.jpg);
+      }
     }
   }
 
@@ -504,7 +552,23 @@
       border-radius: 50%;
       width: 132px;
       height: 132px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
       background-image: url(../images/modals-b-i-f/icecoffee-280.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/modals-b-i-f/icecoffee-280@2x.jpg);
+      }
+
+      @media (min-device-pixel-ratio: 3),
+        (-webkit-min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+        background-image: url(../images/modals-b-i-f/icecoffee-280@3x.jpg);
+      }
     }
   }
 
@@ -539,7 +603,23 @@
       border-radius: 50%;
       width: 132px;
       height: 132px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
       background-image: url(../images/modals-b-i-f/milkshake-280.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/modals-b-i-f/milkshake-280@2x.jpg);
+      }
+
+      @media (min-device-pixel-ratio: 3),
+        (-webkit-min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+        background-image: url(../images/modals-b-i-f/milkshake-280@3x.jpg);
+      }
     }
   }
 
