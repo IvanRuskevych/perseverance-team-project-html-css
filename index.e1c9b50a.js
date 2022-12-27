@@ -1,0 +1,2 @@
+const e=document.querySelector("[data-menu-button]"),t=document.querySelector("[data-menu]"),n=(document.querySelector("[data-menu-is-open]"),document.querySelector("[data-menu-close-button]")),c=document.querySelectorAll(".header__item");function o(){const n="true"===e.getAttribute("aria-expanded")||!1;e.classList.toggle("is-open"),e.setAttribute("aria-expanded",!n),t.classList.toggle("is-open")}e.addEventListener("click",(()=>o())),n.addEventListener("click",(()=>o())),c.forEach((e=>{e.addEventListener("click",(()=>o()))}));
+//# sourceMappingURL=index.e1c9b50a.js.map
