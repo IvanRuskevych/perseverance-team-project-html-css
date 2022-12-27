@@ -159,42 +159,23 @@ visually-hidden {
     display: none
 }
 
-.slideshow-box {
-    // width: 280px;
-    // height: 676px;
-
-    @media screen and (min-width: 768px) {
-        // width: 705px;
-        // height: 782px;
-
-    }
-
-    @media screen and (min-width: 1200px) {
-        // width: 1013px;
-        // height: 923px;
-    }
-}
 
 .slideshow-container {
     position: relative;
     top: -32px;
 
-    height: 676px;
     margin: auto;
 
     @media screen and (min-width: 768px) {
         top: -144px;
         width: 705px;
-        height: 782px;
 
     }
 
     @media screen and (min-width: 1200px) {
         top: -98px;
         width: 1013px;
-        height: 923px;
 
-        // padding-bottom: 228px;
     }
 }
 
