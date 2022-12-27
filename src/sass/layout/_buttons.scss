@@ -49,24 +49,26 @@
 }
 
 .active-typetwo {
-  @include twoTransition(border-color, color);
+  @include threeTransition(background-color, color, fill);
   &:hover {
     border: 2px solid $btnFirstActiveColor;
   }
   &:focus {
     border: 2px solid $btnFirstActiveColor;
     color: $btnSecondActiveColor;
+    fill: $btnSecondActiveColor;
   }
 }
 
 .active-typethree {
-  @include twoTransition(background-color, color);
+  @include threeTransition(background-color, color, fill);
   &:hover {
     background-color: $btnFirstActiveColor;
   }
   &:focus {
     background-color: $btnFirstActiveColor;
     color: $btnSecondActiveColor;
+    fill: $btnSecondActiveColor;
   }
 }
 
