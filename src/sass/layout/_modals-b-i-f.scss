@@ -319,6 +319,93 @@
     }
   }
 
+  &__milkshakes {
+    &--wrap {
+      position: relative;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 22px;
+      width: 132px;
+      height: 136px;
+
+      @include mq(tab) {
+        margin-bottom: 24px;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 0;
+        border-radius: 50%;
+        width: 132px;
+        height: 132px;
+        background: linear-gradient(
+            0deg,
+            rgba(213, 117, 63, 0.7),
+            rgba(213, 117, 63, 0.7)
+          ),
+          #d9d9d9;
+        box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+        // background-image: url(../images/modals-b-i-f/icecreamchokol-280.jpg);
+      }
+    }
+    &--image::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      width: 132px;
+      height: 132px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-image: url(../images/modals-b-i-f/milkshake-280.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/modals-b-i-f/milkshake-280@2x.jpg);
+      }
+
+      @media (min-device-pixel-ratio: 3),
+        (-webkit-min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+        background-image: url(../images/modals-b-i-f/milkshake-280@3x.jpg);
+      }
+    }
+    &--circle {
+      @include flexCenter();
+      position: absolute;
+      top: -2px;
+
+      width: 43px;
+      height: 43px;
+      background: #d6936d;
+      border: 2px solid #d6936d;
+      border-radius: 50%;
+      box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+      &-text {
+        // font-family: 'Montserrat';
+        // font-style: normal;
+        // font-weight: 500;
+        // font-size: 10px;
+        // line-height: 28px;
+        @include textStyle('Montserrat', 500, 10px, 28px, 0);
+
+        /* or 280% */
+
+        color: #131313;
+      }
+    }
+    &--item {
+      border: 2px solid #d6936d;
+    }
+  }
+
   &__posttitle {
     margin-bottom: 24px;
     @include textStyle('Montserrat', 500, 20px, 28px, 0);
