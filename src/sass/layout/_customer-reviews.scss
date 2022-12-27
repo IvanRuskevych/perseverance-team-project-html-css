@@ -1,6 +1,10 @@
 .slide {
     background-image: url(../images/customer-reviews/frame/frame-mobile-1x.webp);
 
+    background-position: top 0 left 0, top 750px left 0, top 1500px left 0;
+    background-size: 100% 1037px;
+    background-repeat: no-repeat;
+
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -19,8 +23,11 @@
             background-image: url(../images/customer-reviews/frame/frame-tablet-2x.webp);
         }
 
+        background-size: 100% 1017px;
+
         height: 1017px;
     }
+
 
     @media screen and (min-width: 1200px) {
         background-image: url(../images/customer-reviews/frame/frame-desktop-1x.webp);
@@ -31,6 +38,7 @@
             background-image: url(../images/customer-reviews/frame/frame-desktop-2x.webp);
         }
 
+        background-size: 100% 1053px;
         height: 1053px;
     }
 
