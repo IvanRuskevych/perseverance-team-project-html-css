@@ -825,6 +825,24 @@
   }
 }
 
+.location {
+  
+  &__map {
+    margin: 0 auto;
+    width: 224px; 
+    height: 199px;
+    font-size: 0;
+    line-height: 0;
+    border-radius: 10px;
+    overflow: hidden;
+
+    @include mq(tab) {
+      width: 448px;
+      height: 260px; 
+    }
+  }
+}
+
 .franchise-text {
   margin-bottom: 24px;
   text-align: initial;

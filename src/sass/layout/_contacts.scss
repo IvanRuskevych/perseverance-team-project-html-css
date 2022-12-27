@@ -2,10 +2,17 @@
     background-color: #84A178;
 
     &__wrap {
+        position: relative;
+        top: -353px;
 
         @media screen and (min-width: 768px) {
             display: flex;
             justify-content: space-between;
+            top: -299px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            top: -128px;
         }
     }
 
@@ -131,20 +138,24 @@
 
     &__wrap-buttons {
         display: flex;
+        position: relative;
 
         @media screen and (max-width: 767px) {
             flex-direction: column;
             align-items: center;
             margin-top: 20px;
+            top: -353px;
         }
         
         @media screen and (min-width: 768px) {
             justify-content: center;
             margin-top: 40px;
+            top: -299px;
         }
 
         @media screen and (min-width: 1200px) {
             margin-top: 60px;
+            top: -128px;
         }
     }
 
@@ -164,12 +175,3 @@
     }
 
 }
-.button-typethree,
-.button-typetwo{
-    fill: $btnMainColor;
-    @include oneTransition(fill);
-  
-    &:focus{
-      fill: $btnSecondActiveColor;
-    }
-  }
