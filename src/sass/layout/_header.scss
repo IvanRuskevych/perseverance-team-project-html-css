@@ -86,8 +86,8 @@ body.menu-is-open{
 .header__menu {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: -21px;
+  width: 113%;
   height: 110vh;
   padding-top: 100px;
   background-color: $mainBgColor;
@@ -97,7 +97,7 @@ body.menu-is-open{
 .header__logo{
   width: 40px;
   height: 37px;
-  margin-left: 12px;
+  // margin-left: 12px;
   z-index: 100;
 }
 .header__menu-button--tablet {
@@ -148,7 +148,7 @@ body.menu-is-open{
   .header__menu{
       left: -32px;
       padding-top: 140px;
-      width: 768px;
+      width: 770px;
   }
   .header__menu-icon {
     width: 22px;
