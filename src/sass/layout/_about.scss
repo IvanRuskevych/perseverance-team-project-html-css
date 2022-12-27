@@ -1,3 +1,11 @@
+.button-typethree{
+  fill: $btnMainColor;
+  @include oneTransition(fill);
+
+  &:focus{
+    fill: $btnSecondActiveColor;
+  }
+}
 .about {
   @media screen and (max-width: 768px) {
     padding-top: 61px;
@@ -223,3 +231,4 @@
     max-width: 463px;
   }
 }
+

@@ -1,5 +1,10 @@
-.header-container {
-  height: 80px;
+
+body.menu-is-open{
+  overflow: hidden;
+}
+.header-container{
+  height: 99px;
+  padding-bottom: 19px;
 }
 .header__wrapper {
   position: relative;
@@ -7,7 +12,10 @@
   padding-bottom: 20px;
   display: flex;
 }
-
+.logo{
+  width: 100px;
+  height: 100px;
+}
 .header__menu-button,
 .header__menu-button--tablet {
   position: absolute;
@@ -37,6 +45,7 @@
   font-size: 32px;
   line-height: 39px;
   color: $btnSecondActiveColor;
+  @include oneTransition(color);
 
   &:hover,
   &:focus {
@@ -53,15 +62,20 @@
   margin-left: auto;
   margin-right: auto;
   fill: $btnMainColor;
+  @include oneTransition(background-color);
+  @include oneTransition(color);
+  @include oneTransition(fill);
 
   background-color: $btnDefaultColor;
 
-  &:hover,
-  &:focus {
-    background-color: $btnFirstActiveColor;
-    color: $btnSecondActiveColor;
-    fill: $btnSecondActiveColor;
-  }
+    &:hover{
+      background-color: $btnFirstActiveColor;
+    }
+    &:focus {
+      background-color: $btnFirstActiveColor;
+      color: $btnSecondActiveColor;
+      fill: $btnSecondActiveColor;
+    }
 }
 .button-order {
   display: flex;
@@ -72,24 +86,26 @@
 .header__menu {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
+  left: -21px;
+  width: 113%;
+  height: 110vh;
   padding-top: 100px;
   background-color: $mainBgColor;
   z-index: 91;
 }
-.header__logotab,
-.header__logodesk {
-  display: none;
-}
-.header__logomob {
-  margin-left: 12px;
+
+.header__logo{
+  width: 40px;
+  height: 37px;
+  // margin-left: 12px;
   z-index: 100;
 }
 .header__menu-button--tablet {
   display: none;
 }
+
+// media for script
+
 @media screen and(max-width: 1199px) {
   .header__menu {
     transform: translateX(-150%);
@@ -99,9 +115,13 @@
     display: block;
     transform: translateX(0);
   }
-  .icon-close {
-    display: none;
-  }
+
+  .header__menu.is-open body{
+    overflow: hidden;
+}
+  .icon-close{
+      display: none;
+}
   .header__menu-button.is-open .icon-close {
     display: block;
   }
@@ -109,16 +129,26 @@
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
-  .header__item {
-    margin-bottom: 40px;
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+// other media
+
+@media screen and (min-width: 768px){
+
+  .header-container{
+    height: 80px;
+    padding-bottom: 0;
   }
-  .header__menu {
-    padding-top: 140px;
+  .header__item{
+      margin-bottom: 40px; 
+  
+      &:last-child{
+          margin-bottom: 0;
+      }
+  }
+  .header__menu{
+      left: -32px;
+      padding-top: 140px;
+      width: 770px;
   }
   .header__menu-icon {
     width: 22px;
@@ -128,28 +158,25 @@
     padding-top: 18px;
     padding-bottom: 10px;
   }
-  .header__menu-button {
-    z-index: 50;
-
-    top: 32px;
-    right: 190px;
-    text-align: center;
-    background-color: $mainBgColor;
+  .header__menu-button{
+      z-index: 50;
+      top: 32px;
+      right: 190px;
+      text-align: center;
+      background-color: $mainBgColor;
   }
+
   .header__button-order {
     position: absolute;
     top: 25px;
     right: 2px;
     margin: 0;
   }
-  .header__logomob,
-  .header__logodesk {
-    display: none;
+  .header__logo{
+      width: 48px;
+      height: 44px;
   }
-  .header__logotab {
-    display: block;
-    z-index: 100;
-  }
+
   .header__button-order {
     display: flex;
     margin-top: -5px;
@@ -175,23 +202,30 @@
   .header__wrapper {
     padding-top: 10px;
   }
-  .header__menu {
-    position: static;
-    height: auto;
-    padding-top: 0;
-    padding-left: 309px;
+
+  .header-container{
+    height: 118px;
+    padding-bottom: 38px;
+  }
+  .header__menu{
+      position: static;
+      width: 100%;
+      height: auto;
+      padding-top: 0;
+      padding-left: 300px;
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+  }
+  .header__list{
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
-  .header__list {
-    display: flex;
-  }
-  .header__item {
-    margin: 0;
+  .header__item{
     margin-right: 28px;
+    margin-bottom: 0;
 
-    &:last-child {
+    &:last-child{
       margin-right: 0;
     }
   }
@@ -210,15 +244,11 @@
   }
   .header__button-order {
     position: static;
-
     margin: 0;
   }
-  .header__logomob,
-  .header__logotab {
-    display: none;
-  }
-  .header__logodesk {
-    display: block;
+  .header__logo{
+      width: 60px;
+      height: 65px;
   }
   .header__button-order {
     display: none;
