@@ -2168,83 +2168,6 @@ visually-hidden {
 .modal__input--hidden:checked + .modal-item__milkshake {
   background-color: #d6936d;
 }
-.modal__icechololate--wrap {
-  position: relative;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 22px;
-  width: 132px;
-  height: 136px;
-}
-@media screen and (min-width: 768px) {
-  .modal__icechololate--wrap {
-    margin-bottom: 24px;
-  }
-}
-.modal__icechololate--wrap::before {
-  content: "";
-  position: absolute;
-  top: 7px;
-  left: 0;
-  border-radius: 50%;
-  width: 132px;
-  height: 132px;
-  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
-  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-}
-.modal__icechololate--image::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 50%;
-  width: 132px;
-  height: 132px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url(../images/modals-b-i-f/icecreamchokol-280.jpg);
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .modal__icechololate--image::before {
-    background-image: url(../images/modals-b-i-f/icecreamchokol-280@2x.jpg);
-  }
-}
-@media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
-  .modal__icechololate--image::before {
-    background-image: url(../images/modals-b-i-f/icecreamchokol-280@3x.jpg);
-  }
-}
-.modal__posttitle {
-  margin-bottom: 24px;
-  font-family: "Montserrat";
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.4;
-  letter-spacing: 0;
-  /* identical to box height, or 140% */
-  text-align: center;
-  color: #131313;
-}
-@media screen and (min-width: 768px) {
-  .modal__posttitle {
-    margin-bottom: 20px;
-  }
-}
-.modal--icecream-paddings {
-  padding: 28px 20px;
-}
-@media screen and (min-width: 768px) {
-  .modal--icecream-paddings {
-    padding: 32px 40px;
-  }
-}
-.modal--scroll {
-  height: 100%;
-  overflow: scroll;
-}
-
 .modal-icechololate__list {
   display: flex;
   justify-content: space-between;
@@ -2297,6 +2220,155 @@ visually-hidden {
   letter-spacing: 0;
   /* or 280% */
   color: #131313;
+}
+.modal__icechololate--wrap {
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 22px;
+  width: 132px;
+  height: 136px;
+}
+@media screen and (min-width: 768px) {
+  .modal__icechololate--wrap {
+    margin-bottom: 24px;
+  }
+}
+.modal__icechololate--wrap::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  border-radius: 50%;
+  width: 132px;
+  height: 132px;
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+.modal__icechololate--image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 132px;
+  height: 132px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/modals-b-i-f/icecreamchokol-280.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .modal__icechololate--image::before {
+    background-image: url(../images/modals-b-i-f/icecreamchokol-280@2x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .modal__icechololate--image::before {
+    background-image: url(../images/modals-b-i-f/icecreamchokol-280@3x.jpg);
+  }
+}
+.modal__icecoffee--wrap {
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 22px;
+  width: 132px;
+  height: 136px;
+}
+@media screen and (min-width: 768px) {
+  .modal__icecoffee--wrap {
+    margin-bottom: 24px;
+  }
+}
+.modal__icecoffee--wrap::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  border-radius: 50%;
+  width: 132px;
+  height: 132px;
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+  box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+}
+.modal__icecoffee--image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 132px;
+  height: 132px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/modals-b-i-f/icecoffee-280.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .modal__icecoffee--image::before {
+    background-image: url(../images/modals-b-i-f/icecoffee-280@2x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .modal__icecoffee--image::before {
+    background-image: url(../images/modals-b-i-f/icecoffee-280@3x.jpg);
+  }
+}
+.modal__icecoffee--circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -2px;
+  width: 43px;
+  height: 43px;
+  background: #efd478;
+  border: 2px solid #efd478;
+  border-radius: 50%;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+}
+.modal__icecoffee--circle-text {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 2.8;
+  letter-spacing: 0;
+  /* or 280% */
+  color: #131313;
+}
+.modal__icecoffee--item {
+  border: 2px solid #efd478;
+}
+.modal__posttitle {
+  margin-bottom: 24px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  /* identical to box height, or 140% */
+  text-align: center;
+  color: #131313;
+}
+@media screen and (min-width: 768px) {
+  .modal__posttitle {
+    margin-bottom: 20px;
+  }
+}
+.modal--icecream-paddings {
+  padding: 28px 20px;
+}
+@media screen and (min-width: 768px) {
+  .modal--icecream-paddings {
+    padding: 32px 40px;
+  }
+}
+.modal--scroll {
+  height: 100%;
+  overflow: scroll;
 }
 
 .ingredients-list {
