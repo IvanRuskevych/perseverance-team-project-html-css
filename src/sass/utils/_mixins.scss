@@ -14,7 +14,7 @@
   font-family: $ff;
   font-weight: $fw;
   font-size: $fs;
-  line-height: calc($lh/$fs);
+  line-height: calc($lh / $fs);
   letter-spacing: $ls;
 }
 
@@ -22,17 +22,17 @@
   font-family: Montserrat;
   font-weight: 600;
   font-size: 14px;
-  line-height: calc($lh/$fs);
+  line-height: calc($lh / $fs);
   color: $bcolor;
 }
 
 @mixin oneTransition($property) {
-  transition: $property 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @mixin twoTransition($firstproperty, $secondproperty) {
-  transition: $firstproperty 1000ms cubic-bezier(0.4, 0, 0.2, 1),
-    $secondproperty 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $firstproperty 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    $secondproperty 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @mixin mq($type) {
