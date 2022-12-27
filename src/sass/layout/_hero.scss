@@ -1,6 +1,8 @@
 .hero-container {
   @include mq(mob-only) {
     background-image: url(../images/hero/point-mobile.svg);
+
+    background-size: contain;
     height: 403px;
   }
   @include mq(tab) {
@@ -161,15 +163,24 @@
   display: block;
   position: absolute;
   left: 54%;
+  bottom: 0;
+  width: 177px;
 
   @include mq(mob-only) {
     transform: translateX(-52%);
-    bottom: 0;
-    width: 177px;
+  }
+  @media screen and (min-width: 360px) and (max-width: 409px) {
+    transform: translateX(-60%);
+  }
+  @media screen and (min-width: 410px) and (max-width: 450px) {
+    transform: translateX(-65%);
+  }
+  @media screen and (min-width: 451px) and (max-width: 767.998px) {
+    transform: translateX(-69%);
   }
   @include mq(tab) {
     width: 268px;
-    bottom: 0;
+
     animation-name: many-ice;
     animation-duration: 4000ms;
     animation-iteration-count: 3;
@@ -190,6 +201,5 @@
   }
   @media screen and (min-width: 1200px) {
     width: 456px;
-    bottom: 0;
   }
 }
