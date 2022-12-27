@@ -164,3 +164,12 @@
     }
 
 }
+.button-typethree,
+.button-typetwo{
+    fill: $btnMainColor;
+    @include oneTransition(fill);
+  
+    &:focus{
+      fill: $btnSecondActiveColor;
+    }
+  }
