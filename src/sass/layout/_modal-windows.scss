@@ -62,6 +62,8 @@
     margin-top: 20px;
 
     @include mq(tab) {
+      width: 448px;
+
       margin-top: 32px;
       @include textStyle(Montserrat, 400, 16px, 22px, 0em);
     }
