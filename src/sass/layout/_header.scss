@@ -20,15 +20,27 @@ body.menu-is-open{
   display: flex;
     width: 100%;
 }
+.header__logo-container{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 20px 0 20px;
+  width: 480px;
+  min-width:320px;
+}
+
 .logo{
   width: 100px;
   height: 100px;
+}
+.header__logodesk{
+  display: none;
 }
 .header__menu-button,
 .header__menu-button--tablet {
   position: absolute;
   z-index: 99;
-  top: 20px;
+  top: 6px;
   right: 16px;
   width: 24px;
   height: 20px;
@@ -94,7 +106,6 @@ body.menu-is-open{
 .header__menu {
   position: absolute;
   top: 0;
-  // left: -21px;
   left: 0;
   width: 100%;
   height: 110vh;
@@ -107,10 +118,11 @@ body.menu-is-open{
   width: 40px;
   height: 37px;
   z-index: 100;
-  margin-left: 16px;
 }
 .header__menu-button--tablet {
-  display: none;
+  display: block;
+  top: 25px;
+  right: 30px;
 }
 
 // media for script
@@ -137,6 +149,10 @@ body.menu-is-open{
   .header__menu-button.is-open .icon-open {
     display: none;
   }
+  .header__menu-button.is-open.header__menu {
+    display: block;
+    transform: translateX(0);
+  }
 }
 
 // other media
@@ -159,6 +175,13 @@ body.menu-is-open{
     padding-top: 140px;
     width: 100%;
   }
+  .header__logo-container{
+    position: relative;
+    width: 768px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 32px 0 32px;
+  }
   .header__menu-icon {
     width: 22px;
     height: 22px;
@@ -169,7 +192,7 @@ body.menu-is-open{
   }
   .header__menu-button{
       z-index: 50;
-      top: 32px;
+      top: 16px;
       right: 216px;
       text-align: center;
       background-color: $mainBgColor;
@@ -177,7 +200,7 @@ body.menu-is-open{
 
   .header__button-order {
     position: absolute;
-    top: 25px;
+    top: 10px;
     right: 2px;
     margin: 0;
   }
@@ -188,7 +211,7 @@ body.menu-is-open{
 
   .header__button-order {
     display: flex;
-    margin-top: -5px;
+    margin-top: -7px;
     margin-right: 32px;
   }
   .button-order {
@@ -215,7 +238,12 @@ body.menu-is-open{
 
 }
 @media screen and (min-width: 1200px) {
+  .container{
+    max-width: 100%;
+  }
   .header__wrapper {
+    width: 1200px;
+    margin: 0 auto;
     padding: 0;
     padding-top: 10px;
     background-color: $mainBgColor;
@@ -233,6 +261,9 @@ body.menu-is-open{
       display: flex;
       justify-content:space-between;
       align-items: center;
+  }
+  .header__logo-container{
+    display: none;
   }
   .header__list{
     display: flex;
@@ -265,8 +296,13 @@ body.menu-is-open{
     margin-right: 16px;
   }
   .header__logo{
+    display: none;
       width: 60px;
       height: 65px;
+  }
+  .header__logodesk{
+    display:block;
+    margin-left: 16px;
 
   }
   .header__button-order {
