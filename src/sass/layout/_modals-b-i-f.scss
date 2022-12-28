@@ -870,5 +870,8 @@
   }
 }
 .modal-made--padding {
-  padding: 32px 60px;
+  padding: 28px;
+  @include mq(tab) {
+    padding: 32px 60px;
+  }
 }
