@@ -95,6 +95,7 @@
       margin-bottom: 40px;
       gap: 32px;
     }
+
     &__toggle:hover {
       cursor: pointer;
     }
@@ -153,9 +154,8 @@
       width: 43px;
       height: 43px;
       background: #9cbe8f;
-      border: 2px solid #9cbe8f;
       border-radius: 50%;
-      box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+      box-shadow: 0px 6px 20px #9cbe8f;
       &-text {
         // font-family: 'Montserrat';
         // font-style: normal;
@@ -198,7 +198,6 @@
             rgba(156, 190, 143, 0.7)
           ),
           #d9d9d9;
-
         box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
         // background-image: url(../images/modals-b-i-f/icecreamchokol-280.jpg);
       }
@@ -297,10 +296,9 @@
 
       width: 43px;
       height: 43px;
-      background: #efd478;
-      border: 2px solid #efd478;
       border-radius: 50%;
-      box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+      background: #f8d24eb3;
+      box-shadow: 0 6px 20px #f8d24eb3;
       &-text {
         // font-family: 'Montserrat';
         // font-style: normal;
@@ -384,10 +382,9 @@
 
       width: 43px;
       height: 43px;
-      background: #d6936d;
-      border: 2px solid #d6936d;
       border-radius: 50%;
-      box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+      background: #d6936d;
+      box-shadow: 0px 6px 20px #d6936d;
       &-text {
         // font-family: 'Montserrat';
         // font-style: normal;
@@ -433,6 +430,12 @@
   &--scroll {
     height: 100%;
     overflow: scroll;
+    &__tab {
+      @include mq(not-desk) {
+        height: 100%;
+        overflow: scroll;
+      }
+    }
   }
 }
 
@@ -826,10 +829,9 @@
 }
 
 .location {
-  
   &__map {
     margin: 0 auto;
-    width: 224px; 
+    width: 224px;
     height: 199px;
     font-size: 0;
     line-height: 0;
@@ -838,7 +840,7 @@
 
     @include mq(tab) {
       width: 448px;
-      height: 260px; 
+      height: 260px;
     }
   }
 }
