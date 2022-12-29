@@ -869,3 +869,9 @@
     margin-right: 123px;
   }
 }
+.modal-made--padding {
+  padding: 28px;
+  @include mq(tab) {
+    padding: 32px 60px;
+  }
+}
