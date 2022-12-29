@@ -429,11 +429,11 @@
   }
   &--scroll {
     height: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
     &__tab {
       @include mq(not-desk) {
         height: 100%;
-        overflow: scroll;
+        overflow-y: scroll;
       }
     }
   }

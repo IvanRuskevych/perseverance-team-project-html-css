@@ -120,6 +120,14 @@ body {
     height: 403px;
   }
 }
+@media screen and (min-width: 480px) and (max-width: 767.198px) {
+  .hero-container {
+    height: 317px;
+    background-size: 330px;
+    background-position: right bottom;
+    bottom: 0px;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero-container {
     background-image: url(../images/hero/point-tablet.svg);
@@ -138,16 +146,53 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 480px) and (max-width: 767.998px) {
+  .hero-wrap {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+}
 
 .hero-basic__title {
   font-family: "Seymour One", sans-serif;
   color: #fcfcfc;
   text-transform: uppercase;
+  width: 247px;
+  margin-bottom: 32px;
+  font-family: Seymour One;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.2692307692;
+  letter-spacing: 0.04em;
 }
-@media screen and (max-width: 767.98px) {
+.hero-basic__title--size {
+  font-family: Seymour One;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 0.9705882353;
+  letter-spacing: 0.04em;
+}
+@media screen and (min-width: 380px) and (max-width: 479.198px) {
+  .hero-basic__title {
+    width: 340px;
+    font-family: Seymour One;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 1;
+    letter-spacing: 0.04em;
+  }
+  .hero-basic__title--size {
+    font-family: Seymour One;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 0.7857142857;
+    letter-spacing: 0.04em;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767.198px) {
   .hero-basic__title {
     width: 247px;
-    margin-bottom: 32px;
     font-family: Seymour One;
     font-weight: 400;
     font-size: 26px;
@@ -164,7 +209,6 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .hero-basic__title {
-    width: 247px;
     margin-bottom: 24px;
     font-family: Seymour One;
     font-weight: 400;
@@ -205,6 +249,7 @@ body {
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0em;
+  width: 108px;
 }
 @media screen and (min-width: 1200px) {
   .hero-basic__button {
@@ -407,9 +452,15 @@ body {
     transform: translateX(-65%);
   }
 }
-@media screen and (min-width: 451px) and (max-width: 767.998px) {
+@media screen and (min-width: 451px) and (max-width: 479.198px) {
   .hero-img {
     transform: translateX(-69%);
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767.198px) {
+  .hero-img {
+    width: 218px;
+    left: 72%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1634,7 +1685,7 @@ visually-hidden {
 }
 @media screen and (max-width: 767px) {
   .contacts__cafe {
-    max-width: 280px;
+    min-width: 280px;
     margin: 0 auto;
     padding: 40px 32px 24px;
   }
@@ -2107,6 +2158,7 @@ visually-hidden {
 }
 @media screen and (min-width: 768px) {
   .modal-text {
+    width: 448px;
     margin-top: 32px;
     font-family: Montserrat;
     font-weight: 400;
@@ -2525,12 +2577,12 @@ visually-hidden {
 }
 .modal--scroll {
   height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 @media screen and (max-width: 1199.98px) {
   .modal--scroll__tab {
     height: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
   }
 }
 
@@ -2891,5 +2943,14 @@ visually-hidden {
   .franchise-title {
     margin-left: 123px;
     margin-right: 123px;
+  }
+}
+
+.modal-made--padding {
+  padding: 28px;
+}
+@media screen and (min-width: 768px) {
+  .modal-made--padding {
+    padding: 32px 60px;
   }
 }/*# sourceMappingURL=index.css.map */
