@@ -16,3 +16,23 @@ menuCloseBtnRef.addEventListener('click', ()=> toggleMenu());
 menuLinks.forEach(item => {
   item.addEventListener('click', ()=> toggleMenu());
 });
+
+//Scroll procent header
+const scrollBg = document.querySelector('.header__bg-scroll');
+$(document).ready(function () {
+  let windowHeight = $(window).height();
+
+  window.addEventListener("scroll", (evt) => {
+    changeActiveNavPosition();
+  })
+
+  function changeActiveNavPosition() {
+
+    let mainContentHeight = document.querySelector('body').offsetHeight - windowHeight;
+    let windowScrollProcent = window.pageYOffset / mainContentHeight * 100;
+
+
+    scrollBg.style.width = windowScrollProcent + "%";
+
+  }
+});
